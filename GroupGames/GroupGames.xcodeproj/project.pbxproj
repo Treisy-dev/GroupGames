@@ -18,7 +18,6 @@
 		C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB9C2B9F056400EA100E /* MainViewModel.swift */; };
 		C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABC92BAF1F3400EA100E /* SnapKit */; };
 		C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */; };
-		DEA29427B784930058668036 /* Pods_GroupGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FBD8F53F978FBAF98D03C5 /* Pods_GroupGames.framework */; };
 		C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */; };
 		C333ABD32BAFED2E00EA100E /* AliasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD22BAFED2E00EA100E /* AliasView.swift */; };
 		C333ABD52BAFED3B00EA100E /* AliasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD42BAFED3B00EA100E /* AliasViewController.swift */; };
@@ -34,8 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2886D58053DC5FD82D4603BB /* Pods-GroupGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.release.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.release.xcconfig"; sourceTree = "<group>"; };
-		30FBD8F53F978FBAF98D03C5 /* Pods_GroupGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7C2B9F03FE00EA100E /* GroupGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C333AB812B9F03FE00EA100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +43,6 @@
 		C333AB982B9F054E00EA100E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C333AB9A2B9F055C00EA100E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C333AB9C2B9F056400EA100E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		FF305C2D4EF7298A87C6AC17 /* Pods-GroupGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.debug.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.debug.xcconfig"; sourceTree = "<group>"; };
 		C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonFubric.swift; sourceTree = "<group>"; };
 		C333ABD22BAFED2E00EA100E /* AliasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasView.swift; sourceTree = "<group>"; };
 		C333ABD42BAFED3B00EA100E /* AliasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasViewController.swift; sourceTree = "<group>"; };
@@ -69,29 +65,17 @@
 				2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */,
 				C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */,
 				C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */,
-				DEA29427B784930058668036 /* Pods_GroupGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42023F64E386541DDAA65CDA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FF305C2D4EF7298A87C6AC17 /* Pods-GroupGames.debug.xcconfig */,
-				2886D58053DC5FD82D4603BB /* Pods-GroupGames.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		C333AB732B9F03FE00EA100E = {
 			isa = PBXGroup;
 			children = (
 				C333AB7E2B9F03FE00EA100E /* GroupGames */,
 				C333AB7D2B9F03FE00EA100E /* Products */,
-				42023F64E386541DDAA65CDA /* Pods */,
-				D3E50032AA348554EE3A57A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,13 +114,6 @@
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
-		D3E50032AA348554EE3A57A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				30FBD8F53F978FBAF98D03C5 /* Pods_GroupGames.framework */,
-			);
-			name = Frameworks;
-
 		C333ABCD2BAFE79500EA100E /* UIFabrics */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,12 +178,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C333AB932B9F040000EA100E /* Build configuration list for PBXNativeTarget "GroupGames" */;
 			buildPhases = (
-				4C85A5491358A825BFCEC0F6 /* [CP] Check Pods Manifest.lock */,
 				C333AB782B9F03FE00EA100E /* Sources */,
 				C333AB792B9F03FE00EA100E /* Frameworks */,
 				C333AB7A2B9F03FE00EA100E /* Resources */,
-				B2B05EF7D7FE2224BB6BD995 /* [CP] Embed Pods Frameworks */,
-				2A09BF912BB08FB400E15F8B /* ShellScript */,
+				C333AB962B9F043E00EA100E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -272,7 +247,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A09BF912BB08FB400E15F8B /* ShellScript */ = {
+		C333AB962B9F043E00EA100E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -288,46 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4C85A5491358A825BFCEC0F6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GroupGames-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2B05EF7D7FE2224BB6BD995 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks.sh\"\n";
+			shellScript = " \nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,7 +429,6 @@
 		};
 		C333AB942B9F040000EA100E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF305C2D4EF7298A87C6AC17 /* Pods-GroupGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,7 +442,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +461,6 @@
 		};
 		C333AB952B9F040000EA100E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2886D58053DC5FD82D4603BB /* Pods-GroupGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -541,7 +474,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
