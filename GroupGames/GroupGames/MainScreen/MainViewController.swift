@@ -8,11 +8,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    var gms = GameScreenViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationController?.pushViewController(gms, animated: true)
     }
 
     /*
