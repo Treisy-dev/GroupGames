@@ -26,6 +26,20 @@ class SpySettingsViewController: UIViewController {
         segmentControl.addTarget(self, action: #selector(timersSegmentedControlValueChanged(_:)), for: .valueChanged)
         return segmentControl
     }()
+    private lazy var playersLabel: UILabel = {
+        var label = UILabel()
+        label.textColor = .black
+        label.text = "Players:"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    private lazy var timerLabel: UILabel = {
+        var label = UILabel()
+        label.textColor = .black
+        label.text = "Time:"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
 
     // MARK: Initializator
 
@@ -60,8 +74,18 @@ class SpySettingsViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
 
+        let labelstackView = UIStackView(arrangedSubviews: [playersLabel, timerLabel])
+        labelstackView.axis = .vertical
+        labelstackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(labelstackView)
+
         stackView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()}
+
+        labelstackView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.right.equalTo(stackView).inset(100)
+        }
     }
 
     private func setupSettings() {

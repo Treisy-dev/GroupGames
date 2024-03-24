@@ -36,7 +36,6 @@ final class SpyGameViewController: UIViewController {
         let action = UIAction { [weak self] _ in
             self?.viewModel.trigger(.proccedButtonTapedNextQustion)
         }
-
         var button = UIButton(primaryAction: action)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Следующий вопрос", for: .normal)
@@ -80,6 +79,7 @@ final class SpyGameViewController: UIViewController {
         setupLayout()
         view.backgroundColor = .white
         bindings()
+        cardView.text = "Нажмите"
         viewModel.start()
     }
 
