@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
+		78C213AD2BAF2B88001958B7 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 78C213AC2BAF2B88001958B7 /* RxBlocking */; };
+		78C213AF2BAF2B88001958B7 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78C213AE2BAF2B88001958B7 /* RxBlocking-Dynamic */; };
+		78C213B12BAF2B88001958B7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 78C213B02BAF2B88001958B7 /* RxCocoa */; };
+		78C213B32BAF2B88001958B7 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78C213B22BAF2B88001958B7 /* RxCocoa-Dynamic */; };
+		78C213B52BAF2B88001958B7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 78C213B42BAF2B88001958B7 /* RxRelay */; };
+		78C213B82BAF2BDF001958B7 /* SpyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213B72BAF2BDF001958B7 /* SpyMainViewController.swift */; };
+		78C213BA2BAF2BED001958B7 /* SpyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213B92BAF2BED001958B7 /* SpyMainViewModel.swift */; };
+		78C213C12BAF362F001958B7 /* SpyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213C02BAF362F001958B7 /* SpyCoordinator.swift */; };
+		78C213C32BAF3961001958B7 /* SpyMainModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213C22BAF3961001958B7 /* SpyMainModuleIO.swift */; };
+		78C213C72BAF3D03001958B7 /* SpySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213C62BAF3D03001958B7 /* SpySettingsViewController.swift */; };
+		78C213C92BAF40D1001958B7 /* SpyMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213C82BAF40D1001958B7 /* SpyMainViewBuilder.swift */; };
+		78C213CD2BAF4326001958B7 /* SpySettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213CC2BAF4326001958B7 /* SpySettingsViewModel.swift */; };
+		78C213D22BAF4494001958B7 /* SpyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213D12BAF4494001958B7 /* SpyGameViewController.swift */; };
+		78C213D42BAF44AC001958B7 /* SpyGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213D32BAF44AC001958B7 /* SpyGameViewModel.swift */; };
+		78C213D72BAF4517001958B7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213D62BAF4517001958B7 /* ViewModel.swift */; };
+		78C213D92BAF4719001958B7 /* SpyGameModuleO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213D82BAF4719001958B7 /* SpyGameModuleO.swift */; };
+		78C213DB2BAF4FCE001958B7 /* SpySettingsModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213DA2BAF4FCE001958B7 /* SpySettingsModuleIO.swift */; };
+		78C213DD2BAF51BB001958B7 /* SpySettingsViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213DC2BAF51BB001958B7 /* SpySettingsViewBuilder.swift */; };
+		78C213DF2BAF727E001958B7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213DE2BAF727E001958B7 /* Settings.swift */; };
+		78C213E12BAF7E84001958B7 /* SpyGameViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C213E02BAF7E84001958B7 /* SpyGameViewBuilder.swift */; };
 		C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */; };
 		C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB812B9F03FE00EA100E /* SceneDelegate.swift */; };
 		C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C333AB882B9F03FE00EA100E /* GroupGames.xcdatamodeld */; };
@@ -21,6 +41,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78C213B72BAF2BDF001958B7 /* SpyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainViewController.swift; sourceTree = "<group>"; };
+		78C213B92BAF2BED001958B7 /* SpyMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainViewModel.swift; sourceTree = "<group>"; };
+		78C213C02BAF362F001958B7 /* SpyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyCoordinator.swift; sourceTree = "<group>"; };
+		78C213C22BAF3961001958B7 /* SpyMainModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainModuleIO.swift; sourceTree = "<group>"; };
+		78C213C62BAF3D03001958B7 /* SpySettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpySettingsViewController.swift; sourceTree = "<group>"; };
+		78C213C82BAF40D1001958B7 /* SpyMainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainViewBuilder.swift; sourceTree = "<group>"; };
+		78C213CC2BAF4326001958B7 /* SpySettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpySettingsViewModel.swift; sourceTree = "<group>"; };
+		78C213D12BAF4494001958B7 /* SpyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGameViewController.swift; sourceTree = "<group>"; };
+		78C213D32BAF44AC001958B7 /* SpyGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGameViewModel.swift; sourceTree = "<group>"; };
+		78C213D62BAF4517001958B7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		78C213D82BAF4719001958B7 /* SpyGameModuleO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGameModuleO.swift; sourceTree = "<group>"; };
+		78C213DA2BAF4FCE001958B7 /* SpySettingsModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpySettingsModuleIO.swift; sourceTree = "<group>"; };
+		78C213DC2BAF51BB001958B7 /* SpySettingsViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpySettingsViewBuilder.swift; sourceTree = "<group>"; };
+		78C213DE2BAF727E001958B7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		78C213E02BAF7E84001958B7 /* SpyGameViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGameViewBuilder.swift; sourceTree = "<group>"; };
 		C333AB7C2B9F03FE00EA100E /* GroupGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C333AB812B9F03FE00EA100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,15 +73,122 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C213B12BAF2B88001958B7 /* RxCocoa in Frameworks */,
+				78C213B32BAF2B88001958B7 /* RxCocoa-Dynamic in Frameworks */,
 				2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */,
+				78C213AD2BAF2B88001958B7 /* RxBlocking in Frameworks */,
 				C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */,
 				C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */,
+				78C213B52BAF2B88001958B7 /* RxRelay in Frameworks */,
+				78C213AF2BAF2B88001958B7 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78C213B62BAF2B95001958B7 /* Spy_Aidar */ = {
+			isa = PBXGroup;
+			children = (
+				78C213D52BAF44D4001958B7 /* Base */,
+				78C213CE2BAF4457001958B7 /* SpyGameView */,
+				78C213C52BAF3CE7001958B7 /* SpySettingsView */,
+				78C213C42BAF3CC7001958B7 /* SpyMainView */,
+				78C213C02BAF362F001958B7 /* SpyCoordinator.swift */,
+			);
+			path = Spy_Aidar;
+			sourceTree = "<group>";
+		};
+		78C213BB2BAF3040001958B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78C213B72BAF2BDF001958B7 /* SpyMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78C213BC2BAF304D001958B7 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78C213B92BAF2BED001958B7 /* SpyMainViewModel.swift */,
+				78C213C22BAF3961001958B7 /* SpyMainModuleIO.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		78C213C42BAF3CC7001958B7 /* SpyMainView */ = {
+			isa = PBXGroup;
+			children = (
+				78C213BB2BAF3040001958B7 /* View */,
+				78C213BC2BAF304D001958B7 /* VIewModel */,
+				78C213C82BAF40D1001958B7 /* SpyMainViewBuilder.swift */,
+			);
+			path = SpyMainView;
+			sourceTree = "<group>";
+		};
+		78C213C52BAF3CE7001958B7 /* SpySettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				78C213CB2BAF430E001958B7 /* ViewModel */,
+				78C213CA2BAF4304001958B7 /* View */,
+				78C213DC2BAF51BB001958B7 /* SpySettingsViewBuilder.swift */,
+			);
+			path = SpySettingsView;
+			sourceTree = "<group>";
+		};
+		78C213CA2BAF4304001958B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78C213C62BAF3D03001958B7 /* SpySettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78C213CB2BAF430E001958B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78C213CC2BAF4326001958B7 /* SpySettingsViewModel.swift */,
+				78C213DA2BAF4FCE001958B7 /* SpySettingsModuleIO.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78C213CE2BAF4457001958B7 /* SpyGameView */ = {
+			isa = PBXGroup;
+			children = (
+				78C213D02BAF4483001958B7 /* View */,
+				78C213CF2BAF4465001958B7 /* ViewModel */,
+				78C213E02BAF7E84001958B7 /* SpyGameViewBuilder.swift */,
+			);
+			path = SpyGameView;
+			sourceTree = "<group>";
+		};
+		78C213CF2BAF4465001958B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78C213D32BAF44AC001958B7 /* SpyGameViewModel.swift */,
+				78C213D82BAF4719001958B7 /* SpyGameModuleO.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78C213D02BAF4483001958B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78C213D12BAF4494001958B7 /* SpyGameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78C213D52BAF44D4001958B7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				78C213D62BAF4517001958B7 /* ViewModel.swift */,
+				78C213DE2BAF727E001958B7 /* Settings.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		C333AB732B9F03FE00EA100E = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +208,7 @@
 		C333AB7E2B9F03FE00EA100E /* GroupGames */ = {
 			isa = PBXGroup;
 			children = (
+				78C213B62BAF2B95001958B7 /* Spy_Aidar */,
 				C333AB972B9F051F00EA100E /* MainScreen */,
 				C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */,
 				C333AB812B9F03FE00EA100E /* SceneDelegate.swift */,
@@ -108,6 +251,11 @@
 				C333ABC92BAF1F3400EA100E /* SnapKit */,
 				C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */,
 				2AACDC372BAF26E4000672B0 /* Alamofire */,
+				78C213AC2BAF2B88001958B7 /* RxBlocking */,
+				78C213AE2BAF2B88001958B7 /* RxBlocking-Dynamic */,
+				78C213B02BAF2B88001958B7 /* RxCocoa */,
+				78C213B22BAF2B88001958B7 /* RxCocoa-Dynamic */,
+				78C213B42BAF2B88001958B7 /* RxRelay */,
 			);
 			productName = GroupGames;
 			productReference = C333AB7C2B9F03FE00EA100E /* GroupGames.app */;
@@ -140,6 +288,7 @@
 			packageReferences = (
 				C333ABC82BAF1F3400EA100E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2AACDC362BAF26E4000672B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = C333AB7D2B9F03FE00EA100E /* Products */;
 			projectDirPath = "";
@@ -190,11 +339,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */,
+				78C213DB2BAF4FCE001958B7 /* SpySettingsModuleIO.swift in Sources */,
 				C333AB992B9F054E00EA100E /* MainView.swift in Sources */,
+				78C213C92BAF40D1001958B7 /* SpyMainViewBuilder.swift in Sources */,
+				78C213CD2BAF4326001958B7 /* SpySettingsViewModel.swift in Sources */,
 				C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */,
+				78C213D92BAF4719001958B7 /* SpyGameModuleO.swift in Sources */,
+				78C213C32BAF3961001958B7 /* SpyMainModuleIO.swift in Sources */,
+				78C213D72BAF4517001958B7 /* ViewModel.swift in Sources */,
+				78C213D42BAF44AC001958B7 /* SpyGameViewModel.swift in Sources */,
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
+				78C213DD2BAF51BB001958B7 /* SpySettingsViewBuilder.swift in Sources */,
+				78C213C72BAF3D03001958B7 /* SpySettingsViewController.swift in Sources */,
+				78C213E12BAF7E84001958B7 /* SpyGameViewBuilder.swift in Sources */,
+				78C213DF2BAF727E001958B7 /* Settings.swift in Sources */,
+				78C213BA2BAF2BED001958B7 /* SpyMainViewModel.swift in Sources */,
+				78C213C12BAF362F001958B7 /* SpyCoordinator.swift in Sources */,
+				78C213D22BAF4494001958B7 /* SpyGameViewController.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
+				78C213B82BAF2BDF001958B7 /* SpyMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +591,14 @@
 				minimumVersion = 5.9.0;
 			};
 		};
+		78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 		C333ABC82BAF1F3400EA100E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -442,6 +614,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AACDC362BAF26E4000672B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		78C213AC2BAF2B88001958B7 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		78C213AE2BAF2B88001958B7 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		78C213B02BAF2B88001958B7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		78C213B22BAF2B88001958B7 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		78C213B42BAF2B88001958B7 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78C213AB2BAF2B88001958B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
 		};
 		C333ABC92BAF1F3400EA100E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
