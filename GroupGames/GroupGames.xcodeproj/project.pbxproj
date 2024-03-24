@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
+		78B05A702BB09FFB00D74385 /* SpyMainModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A592BB09FFB00D74385 /* SpyMainModuleIO.swift */; };
+		78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A5A2BB09FFB00D74385 /* SpyMainViewModel.swift */; };
+		78B05A722BB09FFB00D74385 /* SpyMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A5B2BB09FFB00D74385 /* SpyMainViewBuilder.swift */; };
+		78B05A732BB09FFB00D74385 /* SpyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A5D2BB09FFB00D74385 /* SpyMainViewController.swift */; };
+		78B05A742BB09FFB00D74385 /* SpyGameModuleO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A602BB09FFB00D74385 /* SpyGameModuleO.swift */; };
+		78B05A752BB09FFB00D74385 /* SpyGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A612BB09FFB00D74385 /* SpyGameViewModel.swift */; };
+		78B05A762BB09FFB00D74385 /* SpyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A632BB09FFB00D74385 /* SpyGameViewController.swift */; };
+		78B05A772BB09FFB00D74385 /* SpyGameViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A642BB09FFB00D74385 /* SpyGameViewBuilder.swift */; };
+		78B05A782BB09FFB00D74385 /* SpySettingsModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A672BB09FFB00D74385 /* SpySettingsModuleIO.swift */; };
+		78B05A792BB09FFB00D74385 /* SpySettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A682BB09FFB00D74385 /* SpySettingsViewModel.swift */; };
+		78B05A7A2BB09FFB00D74385 /* SpySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A6A2BB09FFB00D74385 /* SpySettingsViewController.swift */; };
+		78B05A7B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A6B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift */; };
+		78B05A7C2BB09FFB00D74385 /* SpyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A6C2BB09FFB00D74385 /* SpyCoordinator.swift */; };
+		78B05A7D2BB09FFB00D74385 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A6E2BB09FFB00D74385 /* ViewModel.swift */; };
+		78B05A7E2BB09FFB00D74385 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A6F2BB09FFB00D74385 /* Settings.swift */; };
 		A53B64897EDBAAF1B773C1CB /* Pods_GroupGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2A1F02A7389440716BDB74 /* Pods_GroupGames.framework */; };
 		C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */; };
 		C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB812B9F03FE00EA100E /* SceneDelegate.swift */; };
@@ -36,6 +51,21 @@
 /* Begin PBXFileReference section */
 		606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.release.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.release.xcconfig"; sourceTree = "<group>"; };
 		6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.debug.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.debug.xcconfig"; sourceTree = "<group>"; };
+		78B05A592BB09FFB00D74385 /* SpyMainModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyMainModuleIO.swift; sourceTree = "<group>"; };
+		78B05A5A2BB09FFB00D74385 /* SpyMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyMainViewModel.swift; sourceTree = "<group>"; };
+		78B05A5B2BB09FFB00D74385 /* SpyMainViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyMainViewBuilder.swift; sourceTree = "<group>"; };
+		78B05A5D2BB09FFB00D74385 /* SpyMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyMainViewController.swift; sourceTree = "<group>"; };
+		78B05A602BB09FFB00D74385 /* SpyGameModuleO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyGameModuleO.swift; sourceTree = "<group>"; };
+		78B05A612BB09FFB00D74385 /* SpyGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyGameViewModel.swift; sourceTree = "<group>"; };
+		78B05A632BB09FFB00D74385 /* SpyGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyGameViewController.swift; sourceTree = "<group>"; };
+		78B05A642BB09FFB00D74385 /* SpyGameViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyGameViewBuilder.swift; sourceTree = "<group>"; };
+		78B05A672BB09FFB00D74385 /* SpySettingsModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpySettingsModuleIO.swift; sourceTree = "<group>"; };
+		78B05A682BB09FFB00D74385 /* SpySettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpySettingsViewModel.swift; sourceTree = "<group>"; };
+		78B05A6A2BB09FFB00D74385 /* SpySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpySettingsViewController.swift; sourceTree = "<group>"; };
+		78B05A6B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpySettingsViewBuilder.swift; sourceTree = "<group>"; };
+		78B05A6C2BB09FFB00D74385 /* SpyCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyCoordinator.swift; sourceTree = "<group>"; };
+		78B05A6E2BB09FFB00D74385 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		78B05A6F2BB09FFB00D74385 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BA2A1F02A7389440716BDB74 /* Pods_GroupGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7C2B9F03FE00EA100E /* GroupGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,13 +106,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78B05A562BB09FFB00D74385 /* Spy_Aidar */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A572BB09FFB00D74385 /* SpyMainView */,
+				78B05A5E2BB09FFB00D74385 /* SpyGameView */,
+				78B05A652BB09FFB00D74385 /* SpySettingsView */,
+				78B05A6C2BB09FFB00D74385 /* SpyCoordinator.swift */,
+				78B05A6D2BB09FFB00D74385 /* Base */,
+			);
+			path = Spy_Aidar;
+			sourceTree = "<group>";
+		};
+		78B05A572BB09FFB00D74385 /* SpyMainView */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A582BB09FFB00D74385 /* VIewModel */,
+				78B05A5B2BB09FFB00D74385 /* SpyMainViewBuilder.swift */,
+				78B05A5C2BB09FFB00D74385 /* View */,
+			);
+			path = SpyMainView;
+			sourceTree = "<group>";
+		};
+		78B05A582BB09FFB00D74385 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A592BB09FFB00D74385 /* SpyMainModuleIO.swift */,
+				78B05A5A2BB09FFB00D74385 /* SpyMainViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		78B05A5C2BB09FFB00D74385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A5D2BB09FFB00D74385 /* SpyMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78B05A5E2BB09FFB00D74385 /* SpyGameView */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A5F2BB09FFB00D74385 /* ViewModel */,
+				78B05A622BB09FFB00D74385 /* View */,
+				78B05A642BB09FFB00D74385 /* SpyGameViewBuilder.swift */,
+			);
+			path = SpyGameView;
+			sourceTree = "<group>";
+		};
+		78B05A5F2BB09FFB00D74385 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A602BB09FFB00D74385 /* SpyGameModuleO.swift */,
+				78B05A612BB09FFB00D74385 /* SpyGameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78B05A622BB09FFB00D74385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A632BB09FFB00D74385 /* SpyGameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78B05A652BB09FFB00D74385 /* SpySettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A662BB09FFB00D74385 /* ViewModel */,
+				78B05A692BB09FFB00D74385 /* View */,
+				78B05A6B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift */,
+			);
+			path = SpySettingsView;
+			sourceTree = "<group>";
+		};
+		78B05A662BB09FFB00D74385 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A672BB09FFB00D74385 /* SpySettingsModuleIO.swift */,
+				78B05A682BB09FFB00D74385 /* SpySettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78B05A692BB09FFB00D74385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A6A2BB09FFB00D74385 /* SpySettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78B05A6D2BB09FFB00D74385 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				78B05A6E2BB09FFB00D74385 /* ViewModel.swift */,
+				78B05A6F2BB09FFB00D74385 /* Settings.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		9D4826AB0D67CE465D4A0259 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */,
 				606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +246,7 @@
 		C333AB7E2B9F03FE00EA100E /* GroupGames */ = {
 			isa = PBXGroup;
 			children = (
+				78B05A562BB09FFB00D74385 /* Spy_Aidar */,
 				C333ABD82BAFF40500EA100E /* Extensions */,
 				C333ABD12BAFED1700EA100E /* Alias_Kirill */,
 				C333AB972B9F051F00EA100E /* MainScreen */,
@@ -339,24 +471,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B05A732BB09FFB00D74385 /* SpyMainViewController.swift in Sources */,
 				C333ABE82BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift in Sources */,
 				C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */,
+				78B05A752BB09FFB00D74385 /* SpyGameViewModel.swift in Sources */,
+				78B05A762BB09FFB00D74385 /* SpyGameViewController.swift in Sources */,
 				C333AB992B9F054E00EA100E /* MainView.swift in Sources */,
 				C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */,
+				78B05A772BB09FFB00D74385 /* SpyGameViewBuilder.swift in Sources */,
+				78B05A7A2BB09FFB00D74385 /* SpySettingsViewController.swift in Sources */,
+				78B05A7E2BB09FFB00D74385 /* Settings.swift in Sources */,
+				78B05A782BB09FFB00D74385 /* SpySettingsModuleIO.swift in Sources */,
 				C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */,
+				78B05A702BB09FFB00D74385 /* SpyMainModuleIO.swift in Sources */,
 				C333ABF02BB01D8B00EA100E /* SettingsView.swift in Sources */,
 				C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */,
+				78B05A7B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift in Sources */,
+				78B05A7C2BB09FFB00D74385 /* SpyCoordinator.swift in Sources */,
 				C333ABD52BAFED3B00EA100E /* AliasViewController.swift in Sources */,
+				78B05A742BB09FFB00D74385 /* SpyGameModuleO.swift in Sources */,
 				C333ABEE2BB01D7500EA100E /* SettingsViewController.swift in Sources */,
 				C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */,
 				C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */,
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
+				78B05A7D2BB09FFB00D74385 /* ViewModel.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
+				78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
 				C333ABD32BAFED2E00EA100E /* AliasView.swift in Sources */,
 				C333ABD72BAFED4800EA100E /* AliasViewModel.swift in Sources */,
 				C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */,
 				C333ABF22BB01DAB00EA100E /* SettingsViewModel.swift in Sources */,
+				78B05A792BB09FFB00D74385 /* SpySettingsViewModel.swift in Sources */,
+				78B05A722BB09FFB00D74385 /* SpyMainViewBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
