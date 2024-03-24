@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
+		A53B64897EDBAAF1B773C1CB /* Pods_GroupGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2A1F02A7389440716BDB74 /* Pods_GroupGames.framework */; };
 		C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */; };
 		C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB812B9F03FE00EA100E /* SceneDelegate.swift */; };
 		C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C333AB882B9F03FE00EA100E /* GroupGames.xcdatamodeld */; };
@@ -33,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.release.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.release.xcconfig"; sourceTree = "<group>"; };
+		6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.debug.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2A1F02A7389440716BDB74 /* Pods_GroupGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7C2B9F03FE00EA100E /* GroupGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C333AB812B9F03FE00EA100E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,17 +69,38 @@
 				2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */,
 				C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */,
 				C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */,
+				A53B64897EDBAAF1B773C1CB /* Pods_GroupGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D4826AB0D67CE465D4A0259 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */,
+				606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7028F41942BB3DE98DBEC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2A1F02A7389440716BDB74 /* Pods_GroupGames.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C333AB732B9F03FE00EA100E = {
 			isa = PBXGroup;
 			children = (
 				C333AB7E2B9F03FE00EA100E /* GroupGames */,
 				C333AB7D2B9F03FE00EA100E /* Products */,
+				9D4826AB0D67CE465D4A0259 /* Pods */,
+				A7028F41942BB3DE98DBEC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,10 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C333AB932B9F040000EA100E /* Build configuration list for PBXNativeTarget "GroupGames" */;
 			buildPhases = (
+				3BD36B57871DD0AE6F0B7EB4 /* [CP] Check Pods Manifest.lock */,
 				C333AB782B9F03FE00EA100E /* Sources */,
 				C333AB792B9F03FE00EA100E /* Frameworks */,
 				C333AB7A2B9F03FE00EA100E /* Resources */,
 				C333AB962B9F043E00EA100E /* ShellScript */,
+				1C8EC1928E5107B890CD668A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +274,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C8EC1928E5107B890CD668A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GroupGames/Pods-GroupGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD36B57871DD0AE6F0B7EB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupGames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C333AB962B9F043E00EA100E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -429,6 +495,7 @@
 		};
 		C333AB942B9F040000EA100E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +528,7 @@
 		};
 		C333AB952B9F040000EA100E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
