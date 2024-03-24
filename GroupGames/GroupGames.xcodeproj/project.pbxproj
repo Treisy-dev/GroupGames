@@ -18,6 +18,18 @@
 		C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AB9C2B9F056400EA100E /* MainViewModel.swift */; };
 		C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABC92BAF1F3400EA100E /* SnapKit */; };
 		C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */; };
+		C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */; };
+		C333ABD32BAFED2E00EA100E /* AliasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD22BAFED2E00EA100E /* AliasView.swift */; };
+		C333ABD52BAFED3B00EA100E /* AliasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD42BAFED3B00EA100E /* AliasViewController.swift */; };
+		C333ABD72BAFED4800EA100E /* AliasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD62BAFED4800EA100E /* AliasViewModel.swift */; };
+		C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD92BAFF42000EA100E /* UITableViewCellExtension.swift */; };
+		C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABDD2BAFF9F900EA100E /* UIColorExtension.swift */; };
+		C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */; };
+		C333ABE82BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE72BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift */; };
+		C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE92BB01BBC00EA100E /* UIImageExtension.swift */; };
+		C333ABEE2BB01D7500EA100E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABED2BB01D7500EA100E /* SettingsViewController.swift */; };
+		C333ABF02BB01D8B00EA100E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABEF2BB01D8B00EA100E /* SettingsView.swift */; };
+		C333ABF22BB01DAB00EA100E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +43,18 @@
 		C333AB982B9F054E00EA100E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C333AB9A2B9F055C00EA100E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C333AB9C2B9F056400EA100E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonFubric.swift; sourceTree = "<group>"; };
+		C333ABD22BAFED2E00EA100E /* AliasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasView.swift; sourceTree = "<group>"; };
+		C333ABD42BAFED3B00EA100E /* AliasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasViewController.swift; sourceTree = "<group>"; };
+		C333ABD62BAFED4800EA100E /* AliasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasViewModel.swift; sourceTree = "<group>"; };
+		C333ABD92BAFF42000EA100E /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		C333ABDD2BAFF9F900EA100E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C333ABE72BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasAddTeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		C333ABE92BB01BBC00EA100E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		C333ABED2BB01D7500EA100E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C333ABEF2BB01D8B00EA100E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,8 @@
 		C333AB7E2B9F03FE00EA100E /* GroupGames */ = {
 			isa = PBXGroup;
 			children = (
+				C333ABD82BAFF40500EA100E /* Extensions */,
+				C333ABD12BAFED1700EA100E /* Alias_Kirill */,
 				C333AB972B9F051F00EA100E /* MainScreen */,
 				C333AB7F2B9F03FE00EA100E /* AppDelegate.swift */,
 				C333AB812B9F03FE00EA100E /* SceneDelegate.swift */,
@@ -80,11 +106,69 @@
 		C333AB972B9F051F00EA100E /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				C333ABCD2BAFE79500EA100E /* UIFabrics */,
 				C333AB982B9F054E00EA100E /* MainView.swift */,
 				C333AB9A2B9F055C00EA100E /* MainViewController.swift */,
 				C333AB9C2B9F056400EA100E /* MainViewModel.swift */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		C333ABCD2BAFE79500EA100E /* UIFabrics */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABCE2BAFE79D00EA100E /* UIButtonFabric */,
+			);
+			path = UIFabrics;
+			sourceTree = "<group>";
+		};
+		C333ABCE2BAFE79D00EA100E /* UIButtonFabric */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */,
+			);
+			path = UIButtonFabric;
+			sourceTree = "<group>";
+		};
+		C333ABD12BAFED1700EA100E /* Alias_Kirill */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABEC2BB01D6100EA100E /* SettingsScreen */,
+				C333ABEB2BB01CD500EA100E /* TeamsScreen */,
+			);
+			path = Alias_Kirill;
+			sourceTree = "<group>";
+		};
+		C333ABD82BAFF40500EA100E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABD92BAFF42000EA100E /* UITableViewCellExtension.swift */,
+				C333ABDD2BAFF9F900EA100E /* UIColorExtension.swift */,
+				C333ABE92BB01BBC00EA100E /* UIImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C333ABEB2BB01CD500EA100E /* TeamsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABD22BAFED2E00EA100E /* AliasView.swift */,
+				C333ABD42BAFED3B00EA100E /* AliasViewController.swift */,
+				C333ABD62BAFED4800EA100E /* AliasViewModel.swift */,
+				C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */,
+				C333ABE72BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift */,
+			);
+			path = TeamsScreen;
+			sourceTree = "<group>";
+		};
+		C333ABEC2BB01D6100EA100E /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C333ABED2BB01D7500EA100E /* SettingsViewController.swift */,
+				C333ABEF2BB01D8B00EA100E /* SettingsView.swift */,
+				C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */,
+			);
+			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +273,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C333ABE82BB008B100EA100E /* AliasAddTeamCollectionViewCell.swift in Sources */,
 				C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */,
 				C333AB992B9F054E00EA100E /* MainView.swift in Sources */,
 				C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */,
+				C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */,
+				C333ABF02BB01D8B00EA100E /* SettingsView.swift in Sources */,
+				C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */,
+				C333ABD52BAFED3B00EA100E /* AliasViewController.swift in Sources */,
+				C333ABEE2BB01D7500EA100E /* SettingsViewController.swift in Sources */,
+				C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */,
+				C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */,
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
+				C333ABD32BAFED2E00EA100E /* AliasView.swift in Sources */,
+				C333ABD72BAFED4800EA100E /* AliasViewModel.swift in Sources */,
+				C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */,
+				C333ABF22BB01DAB00EA100E /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
