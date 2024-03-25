@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class AliasViewController: UIViewController {
+final class TeamsViewController: UIViewController {
 
-    private let contentView: AliasView = .init()
+    private let contentView: TeamsView = .init()
 
-    private let viewModel: AliasViewModel
+    private let viewModel: TeamsViewModel
 
-    init(viewModel: AliasViewModel) {
+    init(viewModel: TeamsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,19 +31,30 @@ final class AliasViewController: UIViewController {
         contentView.teamsCollectionView.delegate = self
         contentView.teamsCollectionView.dataSource = viewModel
         contentView.teamsCollectionView.register(
-            AliasTeamsCollectionViewCell.self,
-            forCellWithReuseIdentifier: AliasTeamsCollectionViewCell.reuseIdentifier)
+            TeamsCollectionViewCell.self,
+            forCellWithReuseIdentifier: TeamsCollectionViewCell.reuseIdentifier)
 
         contentView.teamsCollectionView.register(
-            AliasAddTeamCollectionViewCell.self,
-            forCellWithReuseIdentifier: AliasAddTeamCollectionViewCell.reuseIdentifier)
+            TeamsAddCollectionViewCell.self,
+            forCellWithReuseIdentifier: TeamsAddCollectionViewCell.reuseIdentifier)
 
         contentView.optionsTapped = {[weak self] in
             self?.navigationController?.present(SettingsViewController(viewModel: SettingsViewModel()), animated: true)
         }
+
+        contentView.backTapped = { [weak self] in
+            self?.navigationController?.popViewController(animated: true)
+        }
+
+        contentView.nextTapped = { [weak self] in
+            self?.viewModel.updateSettingsInfo()
+            guard let teams = self?.viewModel.defaultTeams else { return }
+            let scoreViewModel = ScoreViewModel(defaultTeams: teams)
+            self?.navigationController?.pushViewController(ScoreViewController(viewModel: scoreViewModel), animated: true)
+        }
     }
 }
-extension AliasViewController: UICollectionViewDelegateFlowLayout {
+extension TeamsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,

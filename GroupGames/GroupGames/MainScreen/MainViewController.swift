@@ -38,7 +38,7 @@ extension MainViewController: MainViewDelegate {
     }
     
     func didAliasButtonTapped() {
-        navigationController?.pushViewController(AliasViewController(viewModel: AliasViewModel()), animated: true)
+        navigationController?.pushViewController(TeamsViewController(viewModel: TeamsViewModel()), animated: true)
     }
     
     func didSpyButtonTapped() {
