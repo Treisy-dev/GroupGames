@@ -34,7 +34,8 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: MainViewDelegate {
     func didYesNoButtonTapped() {
-        print(1)
+        navigationController?.pushViewController(
+            FiveSecondsPlayersScreenViewController(viewModel: FiveSecondsPlayersScreenViewModel()), animated: true)
     }
 
     func didAliasButtonTapped() {

@@ -22,7 +22,7 @@ final class MainView: UIView {
         labelColor: UIColor.white,
         buttonColor: .red.withAlphaComponent(0.7))
     lazy var yesNoButton: UIButton = GameButtonFubric.shared.makeGameButton(
-        label: "YesNo",
+        label: "FiveSeconds",
         labelColor: UIColor.black,
         buttonColor: .yellow.withAlphaComponent(0.7))
     lazy var aliasButton: UIButton = GameButtonFubric.shared.makeGameButton(
