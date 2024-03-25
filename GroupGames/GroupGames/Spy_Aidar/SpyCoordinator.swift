@@ -46,6 +46,14 @@ final class SpyCoordinator {
         let controller = SpySettingsViewBuilder(output: self, settings: settings).build()
         navigationController.present(controller, animated: true)
     }
+
+    private func closeSpyGameView() {
+        navigationController.popViewController(animated: false)
+    }
+
+    private func closeSpyMainView() {
+        navigationController.popViewController(animated: false)
+    }
 }
 
 // MARK: SpyMainModuleOutput
@@ -56,7 +64,7 @@ extension SpyCoordinator: SpyMainModuleOutput {
     }
 
     func proccedButtonTapedExit() {
-
+        closeSpyMainView()
     }
 
     func proccedButtonTapedStart() {
@@ -75,6 +83,6 @@ extension SpyCoordinator: SpySettingsModuleOutput {
 
 extension SpyCoordinator: SpyGameModuleOutput {
     func onClouse() {
-        showSpyMainView()
+        self.closeSpyGameView()
     }
 }

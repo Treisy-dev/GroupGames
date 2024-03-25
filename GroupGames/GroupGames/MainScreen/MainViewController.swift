@@ -42,6 +42,10 @@ extension MainViewController: MainViewDelegate {
     }
     
     func didSpyButtonTapped() {
+        guard let navigationController = navigationController else { return }
+        let spyCoordinator = SpyCoordinator(navigationController: navigationController)
+        spyCoordinator.start()
         print(3)
+        
     }
 }

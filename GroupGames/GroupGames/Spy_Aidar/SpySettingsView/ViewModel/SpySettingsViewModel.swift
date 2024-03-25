@@ -17,7 +17,7 @@ final class SpySettingsViewModel: ViewModel {
     // MARK: Private properties
 
     private(set) var playersSettingSC = ["3", "4", "5"]
-    private(set) var timerSettingSC  = ["1", "2", "3"]
+    private(set) var timerSettingSC = ["1", "2", "3"]
     private var output: SpySettingsModuleOutput
 
     // MARK: Internal properties
