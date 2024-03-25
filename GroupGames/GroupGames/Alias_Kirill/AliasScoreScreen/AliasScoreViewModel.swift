@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-class ScoreViewModel: NSObject, UITableViewDataSource {
+class AliasScoreViewModel: NSObject, UITableViewDataSource {
     var defaultTeams: [(String, UIImage, UIColor)]
 
     init(defaultTeams: [(String, UIImage, UIColor)]) {
@@ -19,7 +19,7 @@ class ScoreViewModel: NSObject, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TeamTableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = AliasTeamTableViewCell(style: .default, reuseIdentifier: nil)
         cell.config(
             teamName: defaultTeams[indexPath.row].0,
             teamImage: defaultTeams[indexPath.row].1,

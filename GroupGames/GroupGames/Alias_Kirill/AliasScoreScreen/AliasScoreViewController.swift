@@ -7,20 +7,20 @@
 
 import UIKit
 
-protocol GameDelegate: AnyObject {
+protocol AliasGameDelegate: AnyObject {
     func updateScore(with newScore: Int)
     func passTurn()
 }
 
-final class ScoreViewController: UIViewController {
+final class AliasScoreViewController: UIViewController {
 
-    private let contentView: ScoreView = .init()
+    private let contentView: AliasScoreView = .init()
     private var turning: Int = 0
     private var winFlag: (Bool, String, Int) = (false, "", 0)
 
-    private let viewModel: ScoreViewModel
+    private let viewModel: AliasScoreViewModel
 
-    init(viewModel: ScoreViewModel) {
+    init(viewModel: AliasScoreViewModel) {
         self.viewModel = viewModel
         contentView.config(defaultTeams: viewModel.defaultTeams)
         super.init(nibName: nil, bundle: nil)
@@ -38,14 +38,14 @@ final class ScoreViewController: UIViewController {
         super.viewDidLoad()
         contentView.teamsTableView.delegate = self
         contentView.teamsTableView.dataSource = viewModel
-        contentView.teamsTableView.register(TeamTableViewCell.self, forCellReuseIdentifier: TeamTableViewCell.reuseIdentifier)
+        contentView.teamsTableView.register(AliasTeamTableViewCell.self, forCellReuseIdentifier: AliasTeamTableViewCell.reuseIdentifier)
 
         contentView.backTapped = { [weak self] in
             self?.navigationController?.popViewController(animated: true)
         }
 
         contentView.playTapped = { [weak self] in
-            let gameViewController = GameViewController(viewModel: GameViewModel())
+            let gameViewController = AliasGameViewController(viewModel: AliasGameViewModel())
             gameViewController.delegate = self
             self?.navigationController?.pushViewController(gameViewController, animated: true)
         }
@@ -67,19 +67,19 @@ final class ScoreViewController: UIViewController {
     }
 }
 
-extension ScoreViewController: UITableViewDelegate {
+extension AliasScoreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
 }
 
-extension ScoreViewController: GameDelegate {
+extension AliasScoreViewController: AliasGameDelegate {
     func updateScore(with newScore: Int) {
-        guard let cell = contentView.teamsTableView.cellForRow(at: IndexPath(row: turning, section: 0)) as? TeamTableViewCell else { return }
+        guard let cell = contentView.teamsTableView.cellForRow(at: IndexPath(row: turning, section: 0)) as? AliasTeamTableViewCell else { return }
         guard let teamScore = cell.teamScoreLabel.text else { return }
         guard let intTeamScore = Int(teamScore) else { return }
         cell.teamScoreLabel.text = String(intTeamScore + newScore)
-        if intTeamScore + newScore >= UserDefaultsDataManager.shared.getWinPoints() && intTeamScore + newScore > winFlag.2 {
+        if intTeamScore + newScore >= AliasUserDefaultsDataManager.shared.getWinPoints() && intTeamScore + newScore > winFlag.2 {
             guard let teamName = cell.teamLabel.text else { return }
             winFlag = (true, teamName, intTeamScore + newScore)
         }
@@ -89,7 +89,7 @@ extension ScoreViewController: GameDelegate {
         if turning == 0 {
             makeCellsClear()
         }
-        guard let cell = contentView.teamsTableView.cellForRow(at: IndexPath(row: turning, section: 0)) as? TeamTableViewCell else { return }
+        guard let cell = contentView.teamsTableView.cellForRow(at: IndexPath(row: turning, section: 0)) as? AliasTeamTableViewCell else { return }
         contentView.scoreTitleLabel.text = "Очередь команды '\(cell.teamLabel.text ?? "")'"
         contentView.teamImageView.image = viewModel.defaultTeams[turning].1
         contentView.backgroundView.backgroundColor = viewModel.defaultTeams[turning].2

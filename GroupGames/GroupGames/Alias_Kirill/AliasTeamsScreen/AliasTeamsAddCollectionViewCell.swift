@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-class TeamsAddCollectionViewCell: UICollectionViewCell {
+class AliasTeamsAddCollectionViewCell: UICollectionViewCell {
     private lazy var addTeamButton: UIButton = UIButton()
     private lazy var addLabel: UILabel = UILabel()
 

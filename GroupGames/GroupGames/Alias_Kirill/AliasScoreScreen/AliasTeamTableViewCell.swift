@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class TeamTableViewCell: UITableViewCell {
+class AliasTeamTableViewCell: UITableViewCell {
 
     lazy var teamImageView: UIImageView = UIImageView()
     lazy var teamBackgroundView: UIView = UIView()

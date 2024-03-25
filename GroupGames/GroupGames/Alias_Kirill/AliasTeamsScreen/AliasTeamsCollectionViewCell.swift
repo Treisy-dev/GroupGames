@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-class TeamsCollectionViewCell: UICollectionViewCell {
+class AliasTeamsCollectionViewCell: UICollectionViewCell {
 
     private lazy var teamImageView: UIImageView = UIImageView()
     private lazy var teamBackgroundView: UIView = UIView()

@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class TeamsViewModel: NSObject, UICollectionViewDataSource {
-    private let userDefaultsDataManager = UserDefaultsDataManager.shared
+final class AliasTeamsViewModel: NSObject, UICollectionViewDataSource {
+    private let userDefaultsDataManager = AliasUserDefaultsDataManager.shared
 
     var defaultTeams = [
         ("Мега Марсиане", UIImage.alien, UIColor.systemRed.withAlphaComponent(0.5)),
@@ -33,9 +33,9 @@ final class TeamsViewModel: NSObject, UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == defaultTeams.count {
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: TeamsAddCollectionViewCell.reuseIdentifier,
+                withReuseIdentifier: AliasTeamsAddCollectionViewCell.reuseIdentifier,
                 for: indexPath)
-                    as? TeamsAddCollectionViewCell else { return UICollectionViewCell()}
+                    as? AliasTeamsAddCollectionViewCell else { return UICollectionViewCell()}
             cell.addTapped = { [weak self] in
                 if self?.defaultTeams.count != 7 {
                     guard let newTeam = self?.teamNames[indexPath.row] else { return }
@@ -47,9 +47,9 @@ final class TeamsViewModel: NSObject, UICollectionViewDataSource {
 
         } else {
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: TeamsCollectionViewCell.reuseIdentifier,
+                withReuseIdentifier: AliasTeamsCollectionViewCell.reuseIdentifier,
                 for: indexPath)
-                    as? TeamsCollectionViewCell else { return UICollectionViewCell()}
+                    as? AliasTeamsCollectionViewCell else { return UICollectionViewCell()}
 
             cell.deleteTapped = { [weak self] teamName in
                 if self?.defaultTeams.count ?? 0 != 2 {

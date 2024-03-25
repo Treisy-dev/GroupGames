@@ -7,13 +7,13 @@
 import Koloda
 import UIKit
 
-class GameViewController: UIViewController {
+class AliasGameViewController: UIViewController {
 
-    private let contentView: GameView = .init()
-    weak var delegate: GameDelegate?
-    private let viewModel: GameViewModel
+    private let contentView: AliasGameView = .init()
+    weak var delegate: AliasGameDelegate?
+    private let viewModel: AliasGameViewModel
 
-    init(viewModel: GameViewModel) {
+    init(viewModel: AliasGameViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,7 +37,7 @@ class GameViewController: UIViewController {
     }
 }
 
-extension GameViewController: KolodaViewDelegate {
+extension AliasGameViewController: KolodaViewDelegate {
 
     func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
         return [.left, .right]

@@ -35,26 +35,26 @@
 		C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABC92BAF1F3400EA100E /* SnapKit */; };
 		C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */; };
 		C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */; };
-		C333ABD32BAFED2E00EA100E /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD22BAFED2E00EA100E /* TeamsView.swift */; };
-		C333ABD52BAFED3B00EA100E /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD42BAFED3B00EA100E /* TeamsViewController.swift */; };
-		C333ABD72BAFED4800EA100E /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD62BAFED4800EA100E /* TeamsViewModel.swift */; };
+		C333ABD32BAFED2E00EA100E /* AliasTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD22BAFED2E00EA100E /* AliasTeamsView.swift */; };
+		C333ABD52BAFED3B00EA100E /* AliasTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD42BAFED3B00EA100E /* AliasTeamsViewController.swift */; };
+		C333ABD72BAFED4800EA100E /* AliasTeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD62BAFED4800EA100E /* AliasTeamsViewModel.swift */; };
 		C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABD92BAFF42000EA100E /* UITableViewCellExtension.swift */; };
 		C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABDD2BAFF9F900EA100E /* UIColorExtension.swift */; };
-		C333ABE62BB008A300EA100E /* TeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE52BB008A300EA100E /* TeamsCollectionViewCell.swift */; };
-		C333ABE82BB008B100EA100E /* TeamsAddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE72BB008B100EA100E /* TeamsAddCollectionViewCell.swift */; };
+		C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */; };
+		C333ABE82BB008B100EA100E /* AliasTeamsAddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE72BB008B100EA100E /* AliasTeamsAddCollectionViewCell.swift */; };
 		C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABE92BB01BBC00EA100E /* UIImageExtension.swift */; };
-		C333ABEE2BB01D7500EA100E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABED2BB01D7500EA100E /* SettingsViewController.swift */; };
-		C333ABF02BB01D8B00EA100E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABEF2BB01D8B00EA100E /* SettingsView.swift */; };
-		C333ABF22BB01DAB00EA100E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */; };
-		C333ABF42BB0A69100EA100E /* UserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF32BB0A69100EA100E /* UserDefaultsDataManager.swift */; };
-		C333ABF72BB0A92600EA100E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF62BB0A92600EA100E /* GameView.swift */; };
-		C333ABF92BB0A93A00EA100E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF82BB0A93A00EA100E /* GameViewController.swift */; };
-		C333ABFB2BB0A94200EA100E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABFA2BB0A94200EA100E /* GameViewModel.swift */; };
-		C333ABFE2BB0AA5000EA100E /* CardSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABFD2BB0AA5000EA100E /* CardSubView.swift */; };
-		C333AC012BB0BB3C00EA100E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC002BB0BB3C00EA100E /* ScoreViewController.swift */; };
-		C333AC032BB0BB4A00EA100E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC022BB0BB4A00EA100E /* ScoreView.swift */; };
-		C333AC052BB0BB5300EA100E /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC042BB0BB5300EA100E /* ScoreViewModel.swift */; };
-		C333AC072BB0CAF000EA100E /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC062BB0CAF000EA100E /* TeamTableViewCell.swift */; };
+		C333ABEE2BB01D7500EA100E /* AliasSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABED2BB01D7500EA100E /* AliasSettingsViewController.swift */; };
+		C333ABF02BB01D8B00EA100E /* AliasSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABEF2BB01D8B00EA100E /* AliasSettingsView.swift */; };
+		C333ABF22BB01DAB00EA100E /* AliasSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF12BB01DAB00EA100E /* AliasSettingsViewModel.swift */; };
+		C333ABF42BB0A69100EA100E /* AliasUserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */; };
+		C333ABF72BB0A92600EA100E /* AliasGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF62BB0A92600EA100E /* AliasGameView.swift */; };
+		C333ABF92BB0A93A00EA100E /* AliasGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF82BB0A93A00EA100E /* AliasGameViewController.swift */; };
+		C333ABFB2BB0A94200EA100E /* AliasGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABFA2BB0A94200EA100E /* AliasGameViewModel.swift */; };
+		C333ABFE2BB0AA5000EA100E /* AliasCardSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABFD2BB0AA5000EA100E /* AliasCardSubView.swift */; };
+		C333AC012BB0BB3C00EA100E /* AliasScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC002BB0BB3C00EA100E /* AliasScoreViewController.swift */; };
+		C333AC032BB0BB4A00EA100E /* AliasScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC022BB0BB4A00EA100E /* AliasScoreView.swift */; };
+		C333AC052BB0BB5300EA100E /* AliasScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC042BB0BB5300EA100E /* AliasScoreViewModel.swift */; };
+		C333AC072BB0CAF000EA100E /* AliasTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333AC062BB0CAF000EA100E /* AliasTeamTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,26 +87,26 @@
 		C333AB9A2B9F055C00EA100E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C333AB9C2B9F056400EA100E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C333ABCF2BAFE7C000EA100E /* GameButtonFubric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonFubric.swift; sourceTree = "<group>"; };
-		C333ABD22BAFED2E00EA100E /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
-		C333ABD42BAFED3B00EA100E /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
-		C333ABD62BAFED4800EA100E /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		C333ABD22BAFED2E00EA100E /* AliasTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsView.swift; sourceTree = "<group>"; };
+		C333ABD42BAFED3B00EA100E /* AliasTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsViewController.swift; sourceTree = "<group>"; };
+		C333ABD62BAFED4800EA100E /* AliasTeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsViewModel.swift; sourceTree = "<group>"; };
 		C333ABD92BAFF42000EA100E /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		C333ABDD2BAFF9F900EA100E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		C333ABE52BB008A300EA100E /* TeamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCollectionViewCell.swift; sourceTree = "<group>"; };
-		C333ABE72BB008B100EA100E /* TeamsAddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsAddCollectionViewCell.swift; sourceTree = "<group>"; };
+		C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C333ABE72BB008B100EA100E /* AliasTeamsAddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamsAddCollectionViewCell.swift; sourceTree = "<group>"; };
 		C333ABE92BB01BBC00EA100E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		C333ABED2BB01D7500EA100E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		C333ABEF2BB01D8B00EA100E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		C333ABF32BB0A69100EA100E /* UserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsDataManager.swift; path = "../../../../../../Library/Mobile Documents/.Trash/GroupGames 20.25.57/GroupGames/GroupGames/Alias_Kirill/UserDefaultsDataManager.swift"; sourceTree = "<group>"; };
-		C333ABF62BB0A92600EA100E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		C333ABF82BB0A93A00EA100E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		C333ABFA2BB0A94200EA100E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		C333ABFD2BB0AA5000EA100E /* CardSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSubView.swift; sourceTree = "<group>"; };
-		C333AC002BB0BB3C00EA100E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		C333AC022BB0BB4A00EA100E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		C333AC042BB0BB5300EA100E /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
-		C333AC062BB0CAF000EA100E /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		C333ABED2BB01D7500EA100E /* AliasSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsViewController.swift; sourceTree = "<group>"; };
+		C333ABEF2BB01D8B00EA100E /* AliasSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsView.swift; sourceTree = "<group>"; };
+		C333ABF12BB01DAB00EA100E /* AliasSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsViewModel.swift; sourceTree = "<group>"; };
+		C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AliasUserDefaultsDataManager.swift; path = "../../../../../../Library/Mobile Documents/.Trash/GroupGames 20.25.57/GroupGames/GroupGames/Alias_Kirill/AliasUserDefaultsDataManager.swift"; sourceTree = "<group>"; };
+		C333ABF62BB0A92600EA100E /* AliasGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameView.swift; sourceTree = "<group>"; };
+		C333ABF82BB0A93A00EA100E /* AliasGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewController.swift; sourceTree = "<group>"; };
+		C333ABFA2BB0A94200EA100E /* AliasGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewModel.swift; sourceTree = "<group>"; };
+		C333ABFD2BB0AA5000EA100E /* AliasCardSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasCardSubView.swift; sourceTree = "<group>"; };
+		C333AC002BB0BB3C00EA100E /* AliasScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasScoreViewController.swift; sourceTree = "<group>"; };
+		C333AC022BB0BB4A00EA100E /* AliasScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasScoreView.swift; sourceTree = "<group>"; };
+		C333AC042BB0BB5300EA100E /* AliasScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasScoreViewModel.swift; sourceTree = "<group>"; };
+		C333AC062BB0CAF000EA100E /* AliasTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTeamTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,11 +308,11 @@
 			isa = PBXGroup;
 			children = (
 				C333ABCD2BAFE79500EA100E /* UIFabrics */,
-				C333ABFF2BB0BB1000EA100E /* ScoreScreen */,
-				C333ABF52BB0A91700EA100E /* GameScreen */,
-				C333ABEC2BB01D6100EA100E /* SettingsScreen */,
-				C333ABEB2BB01CD500EA100E /* TeamsScreen */,
-				C333ABF32BB0A69100EA100E /* UserDefaultsDataManager.swift */,
+				C333ABFF2BB0BB1000EA100E /* AliasScoreScreen */,
+				C333ABF52BB0A91700EA100E /* AliasGameScreen */,
+				C333ABEC2BB01D6100EA100E /* AliasSettingsScreen */,
+				C333ABEB2BB01CD500EA100E /* AliasTeamsScreen */,
+				C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */,
 			);
 			path = Alias_Kirill;
 			sourceTree = "<group>";
@@ -327,56 +327,56 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		C333ABEB2BB01CD500EA100E /* TeamsScreen */ = {
+		C333ABEB2BB01CD500EA100E /* AliasTeamsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				C333ABD22BAFED2E00EA100E /* TeamsView.swift */,
-				C333ABD42BAFED3B00EA100E /* TeamsViewController.swift */,
-				C333ABD62BAFED4800EA100E /* TeamsViewModel.swift */,
-				C333ABE52BB008A300EA100E /* TeamsCollectionViewCell.swift */,
-				C333ABE72BB008B100EA100E /* TeamsAddCollectionViewCell.swift */,
+				C333ABD22BAFED2E00EA100E /* AliasTeamsView.swift */,
+				C333ABD42BAFED3B00EA100E /* AliasTeamsViewController.swift */,
+				C333ABD62BAFED4800EA100E /* AliasTeamsViewModel.swift */,
+				C333ABE52BB008A300EA100E /* AliasTeamsCollectionViewCell.swift */,
+				C333ABE72BB008B100EA100E /* AliasTeamsAddCollectionViewCell.swift */,
 			);
-			path = TeamsScreen;
+			path = AliasTeamsScreen;
 			sourceTree = "<group>";
 		};
-		C333ABEC2BB01D6100EA100E /* SettingsScreen */ = {
+		C333ABEC2BB01D6100EA100E /* AliasSettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				C333ABED2BB01D7500EA100E /* SettingsViewController.swift */,
-				C333ABEF2BB01D8B00EA100E /* SettingsView.swift */,
-				C333ABF12BB01DAB00EA100E /* SettingsViewModel.swift */,
+				C333ABED2BB01D7500EA100E /* AliasSettingsViewController.swift */,
+				C333ABEF2BB01D8B00EA100E /* AliasSettingsView.swift */,
+				C333ABF12BB01DAB00EA100E /* AliasSettingsViewModel.swift */,
 			);
-			path = SettingsScreen;
+			path = AliasSettingsScreen;
 			sourceTree = "<group>";
 		};
-		C333ABF52BB0A91700EA100E /* GameScreen */ = {
+		C333ABF52BB0A91700EA100E /* AliasGameScreen */ = {
 			isa = PBXGroup;
 			children = (
 				C333ABFC2BB0AA4100EA100E /* SubViews */,
-				C333ABF62BB0A92600EA100E /* GameView.swift */,
-				C333ABF82BB0A93A00EA100E /* GameViewController.swift */,
-				C333ABFA2BB0A94200EA100E /* GameViewModel.swift */,
+				C333ABF62BB0A92600EA100E /* AliasGameView.swift */,
+				C333ABF82BB0A93A00EA100E /* AliasGameViewController.swift */,
+				C333ABFA2BB0A94200EA100E /* AliasGameViewModel.swift */,
 			);
-			path = GameScreen;
+			path = AliasGameScreen;
 			sourceTree = "<group>";
 		};
 		C333ABFC2BB0AA4100EA100E /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				C333ABFD2BB0AA5000EA100E /* CardSubView.swift */,
+				C333ABFD2BB0AA5000EA100E /* AliasCardSubView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		C333ABFF2BB0BB1000EA100E /* ScoreScreen */ = {
+		C333ABFF2BB0BB1000EA100E /* AliasScoreScreen */ = {
 			isa = PBXGroup;
 			children = (
-				C333AC002BB0BB3C00EA100E /* ScoreViewController.swift */,
-				C333AC022BB0BB4A00EA100E /* ScoreView.swift */,
-				C333AC042BB0BB5300EA100E /* ScoreViewModel.swift */,
-				C333AC062BB0CAF000EA100E /* TeamTableViewCell.swift */,
+				C333AC002BB0BB3C00EA100E /* AliasScoreViewController.swift */,
+				C333AC022BB0BB4A00EA100E /* AliasScoreView.swift */,
+				C333AC042BB0BB5300EA100E /* AliasScoreViewModel.swift */,
+				C333AC062BB0CAF000EA100E /* AliasTeamTableViewCell.swift */,
 			);
-			path = ScoreScreen;
+			path = AliasScoreScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,16 +523,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B05A732BB09FFB00D74385 /* SpyMainViewController.swift in Sources */,
-				C333ABE82BB008B100EA100E /* TeamsAddCollectionViewCell.swift in Sources */,
+				C333ABE82BB008B100EA100E /* AliasTeamsAddCollectionViewCell.swift in Sources */,
 				C333AB8A2B9F03FE00EA100E /* GroupGames.xcdatamodeld in Sources */,
 				78B05A752BB09FFB00D74385 /* SpyGameViewModel.swift in Sources */,
-				C333AC072BB0CAF000EA100E /* TeamTableViewCell.swift in Sources */,
-				C333ABF92BB0A93A00EA100E /* GameViewController.swift in Sources */,
-				C333AC012BB0BB3C00EA100E /* ScoreViewController.swift in Sources */,
+				C333AC072BB0CAF000EA100E /* AliasTeamTableViewCell.swift in Sources */,
+				C333ABF92BB0A93A00EA100E /* AliasGameViewController.swift in Sources */,
+				C333AC012BB0BB3C00EA100E /* AliasScoreViewController.swift in Sources */,
 				78B05A762BB09FFB00D74385 /* SpyGameViewController.swift in Sources */,
 				C333AB992B9F054E00EA100E /* MainView.swift in Sources */,
-				C333ABF42BB0A69100EA100E /* UserDefaultsDataManager.swift in Sources */,
-				C333AC032BB0BB4A00EA100E /* ScoreView.swift in Sources */,
+				C333ABF42BB0A69100EA100E /* AliasUserDefaultsDataManager.swift in Sources */,
+				C333AC032BB0BB4A00EA100E /* AliasScoreView.swift in Sources */,
 				C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */,
 				78B05A772BB09FFB00D74385 /* SpyGameViewBuilder.swift in Sources */,
 				78B05A7A2BB09FFB00D74385 /* SpySettingsViewController.swift in Sources */,
@@ -540,14 +540,14 @@
 				78B05A782BB09FFB00D74385 /* SpySettingsModuleIO.swift in Sources */,
 				C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */,
 				78B05A702BB09FFB00D74385 /* SpyMainModuleIO.swift in Sources */,
-				C333ABF02BB01D8B00EA100E /* SettingsView.swift in Sources */,
-				C333ABFB2BB0A94200EA100E /* GameViewModel.swift in Sources */,
-				C333ABE62BB008A300EA100E /* TeamsCollectionViewCell.swift in Sources */,
+				C333ABF02BB01D8B00EA100E /* AliasSettingsView.swift in Sources */,
+				C333ABFB2BB0A94200EA100E /* AliasGameViewModel.swift in Sources */,
+				C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */,
 				78B05A7B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift in Sources */,
 				78B05A7C2BB09FFB00D74385 /* SpyCoordinator.swift in Sources */,
-				C333ABD52BAFED3B00EA100E /* TeamsViewController.swift in Sources */,
+				C333ABD52BAFED3B00EA100E /* AliasTeamsViewController.swift in Sources */,
 				78B05A742BB09FFB00D74385 /* SpyGameModuleO.swift in Sources */,
-				C333ABEE2BB01D7500EA100E /* SettingsViewController.swift in Sources */,
+				C333ABEE2BB01D7500EA100E /* AliasSettingsViewController.swift in Sources */,
 				C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */,
 				C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */,
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
@@ -555,15 +555,15 @@
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
 				78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
-				C333ABD32BAFED2E00EA100E /* TeamsView.swift in Sources */,
-				C333ABD72BAFED4800EA100E /* TeamsViewModel.swift in Sources */,
+				C333ABD32BAFED2E00EA100E /* AliasTeamsView.swift in Sources */,
+				C333ABD72BAFED4800EA100E /* AliasTeamsViewModel.swift in Sources */,
 				C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */,
-				C333ABF22BB01DAB00EA100E /* SettingsViewModel.swift in Sources */,
+				C333ABF22BB01DAB00EA100E /* AliasSettingsViewModel.swift in Sources */,
 				78B05A792BB09FFB00D74385 /* SpySettingsViewModel.swift in Sources */,
-				C333ABFE2BB0AA5000EA100E /* CardSubView.swift in Sources */,
+				C333ABFE2BB0AA5000EA100E /* AliasCardSubView.swift in Sources */,
 				78B05A722BB09FFB00D74385 /* SpyMainViewBuilder.swift in Sources */,
-				C333AC052BB0BB5300EA100E /* ScoreViewModel.swift in Sources */,
-				C333ABF72BB0A92600EA100E /* GameView.swift in Sources */,
+				C333AC052BB0BB5300EA100E /* AliasScoreViewModel.swift in Sources */,
+				C333ABF72BB0A92600EA100E /* AliasGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

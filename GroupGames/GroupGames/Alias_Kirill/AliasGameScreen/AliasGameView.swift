@@ -8,14 +8,14 @@ import Koloda
 import SnapKit
 import UIKit
 
-class GameView: UIView {
+class AliasGameView: UIView {
 
     lazy var yesButton: UIButton = UIButton()
     lazy var noButton: UIButton = UIButton()
     lazy var kolodaView: KolodaView = KolodaView()
 
     lazy var timerLabel: UILabel = UILabel()
-    var remainingTime: Int = UserDefaultsDataManager.shared.getDuration()
+    var remainingTime: Int = AliasUserDefaultsDataManager.shared.getDuration()
     var timer: Timer?
 
     var timerFinished: (() -> Void)?

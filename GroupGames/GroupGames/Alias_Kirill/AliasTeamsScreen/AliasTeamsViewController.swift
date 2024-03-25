@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class TeamsViewController: UIViewController {
+final class AliasTeamsViewController: UIViewController {
 
-    private let contentView: TeamsView = .init()
+    private let contentView: AliasTeamsView = .init()
 
-    private let viewModel: TeamsViewModel
+    private let viewModel: AliasTeamsViewModel
 
-    init(viewModel: TeamsViewModel) {
+    init(viewModel: AliasTeamsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,15 +31,15 @@ final class TeamsViewController: UIViewController {
         contentView.teamsCollectionView.delegate = self
         contentView.teamsCollectionView.dataSource = viewModel
         contentView.teamsCollectionView.register(
-            TeamsCollectionViewCell.self,
-            forCellWithReuseIdentifier: TeamsCollectionViewCell.reuseIdentifier)
+            AliasTeamsCollectionViewCell.self,
+            forCellWithReuseIdentifier: AliasTeamsCollectionViewCell.reuseIdentifier)
 
         contentView.teamsCollectionView.register(
-            TeamsAddCollectionViewCell.self,
-            forCellWithReuseIdentifier: TeamsAddCollectionViewCell.reuseIdentifier)
+            AliasTeamsAddCollectionViewCell.self,
+            forCellWithReuseIdentifier: AliasTeamsAddCollectionViewCell.reuseIdentifier)
 
         contentView.optionsTapped = {[weak self] in
-            self?.navigationController?.present(SettingsViewController(viewModel: SettingsViewModel()), animated: true)
+            self?.navigationController?.present(AliasSettingsViewController(viewModel: AliasSettingsViewModel()), animated: true)
         }
 
         contentView.backTapped = { [weak self] in
@@ -49,12 +49,12 @@ final class TeamsViewController: UIViewController {
         contentView.nextTapped = { [weak self] in
             self?.viewModel.updateSettingsInfo()
             guard let teams = self?.viewModel.defaultTeams else { return }
-            let scoreViewModel = ScoreViewModel(defaultTeams: teams)
-            self?.navigationController?.pushViewController(ScoreViewController(viewModel: scoreViewModel), animated: true)
+            let scoreViewModel = AliasScoreViewModel(defaultTeams: teams)
+            self?.navigationController?.pushViewController(AliasScoreViewController(viewModel: scoreViewModel), animated: true)
         }
     }
 }
-extension TeamsViewController: UICollectionViewDelegateFlowLayout {
+extension AliasTeamsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,

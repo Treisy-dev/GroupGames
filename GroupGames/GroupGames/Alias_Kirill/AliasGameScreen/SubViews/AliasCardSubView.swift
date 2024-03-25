@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-class CardSubView: UIView {
+class AliasCardSubView: UIView {
 
     lazy var cardLabel: UILabel = UILabel()
 

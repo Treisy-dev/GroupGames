@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-class TeamsView: UIView {
+class AliasTeamsView: UIView {
     private lazy var backButton: UIButton = GameButtonFubric.shared.makeBackButton()
     private lazy var aliasContentView: UIView = UIView()
     private lazy var contentViewTitleLabel: UILabel = UILabel()

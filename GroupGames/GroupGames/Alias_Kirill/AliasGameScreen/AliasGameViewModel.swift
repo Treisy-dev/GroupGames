@@ -7,7 +7,7 @@
 import Koloda
 import Foundation
 
-final class GameViewModel: KolodaViewDataSource {
+final class AliasGameViewModel: KolodaViewDataSource {
 
     let cardData: [String] = [
         "Вопрос 1", "Вопрос 2", "Вопрос 3", "Вопрос 4",
@@ -18,7 +18,7 @@ final class GameViewModel: KolodaViewDataSource {
     var points: Int = 0
 
     func koloda(_ koloda: Koloda.KolodaView, viewForCardAt index: Int) -> UIView {
-        let card = CardSubView(frame: CGRect())
+        let card = AliasCardSubView(frame: CGRect())
         card.config(cardText: cardData[index])
         return card
     }

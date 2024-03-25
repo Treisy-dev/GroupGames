@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class SettingsViewModel {
-    private let userDefaultsDataManager = UserDefaultsDataManager.shared
+final class AliasSettingsViewModel {
+    private let userDefaultsDataManager = AliasUserDefaultsDataManager.shared
 
     func saveSettingsInfo(duration: String, winPoints: String) {
         userDefaultsDataManager.saveSettingsData(duration: duration, winPoints: winPoints)

@@ -7,13 +7,13 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class AliasSettingsViewController: UIViewController {
 
-    private let contentView: SettingsView = .init()
+    private let contentView: AliasSettingsView = .init()
 
-    private let viewModel: SettingsViewModel
+    private let viewModel: AliasSettingsViewModel
 
-    init(viewModel: SettingsViewModel) {
+    init(viewModel: AliasSettingsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-final class SettingsView: UIView {
+final class AliasSettingsView: UIView {
 
     private lazy var settingsContentView: UIView = UIView()
     lazy var settingsLabel: UILabel = UILabel()
