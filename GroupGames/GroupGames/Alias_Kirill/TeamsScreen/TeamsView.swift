@@ -7,7 +7,8 @@
 import SnapKit
 import UIKit
 
-class AliasView: UIView {
+class TeamsView: UIView {
+    private lazy var backButton: UIButton = GameButtonFubric.shared.makeBackButton()
     private lazy var aliasContentView: UIView = UIView()
     private lazy var contentViewTitleLabel: UILabel = UILabel()
     lazy var teamsCollectionView: UICollectionView = {
@@ -17,9 +18,10 @@ class AliasView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         return collectionView
     }()
-    private lazy var startButton: UIButton = UIButton()
+    private lazy var startButton: UIButton = GameButtonFubric.shared.makeNextButton(title: "Продолжить")
     private lazy var optionButton: UIButton = UIButton()
 
+    var backTapped: (() -> Void)?
     var nextTapped: (() -> Void)?
     var optionsTapped: (() -> Void)?
 
@@ -34,6 +36,7 @@ class AliasView: UIView {
     }
 
     private func setUp() {
+        setUpBackButton()
         setUpContentView()
         setUpContentViewTitleLabel()
         setUpTeamsCollectionView()
@@ -82,13 +85,6 @@ class AliasView: UIView {
 
     private func setUpStartButton() {
         addSubview(startButton)
-        startButton.setTitle("Продолжить", for: .normal)
-        startButton.setTitleColor(.white, for: .normal)
-        startButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        startButton.backgroundColor = .systemBlue.withAlphaComponent(1.5)
-        startButton.layer.cornerRadius = 15
-        startButton.layer.borderWidth = 3
-        startButton.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.3).cgColor
         let nextAction: UIAction = UIAction { [weak self] _ in
             self?.nextTapped?()
         }
@@ -121,6 +117,20 @@ class AliasView: UIView {
             make.trailing.equalTo(startButton.snp.leading).inset(-10)
             make.leading.equalToSuperview().offset(20)
             make.bottom.equalToSuperview().inset(50)
+        }
+    }
+
+    private func setUpBackButton() {
+        aliasContentView.addSubview(backButton)
+        let backAction: UIAction = UIAction { [weak self] _ in
+            self?.backTapped?()
+        }
+        backButton.addAction(backAction, for: .touchUpInside)
+
+        backButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(10)
+            make.leading.equalToSuperview().offset(10)
+            make.width.height.equalTo(30)
         }
     }
 

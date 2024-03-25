@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-class AliasTeamsCollectionViewCell: UICollectionViewCell {
+class TeamsCollectionViewCell: UICollectionViewCell {
 
     private lazy var teamImageView: UIImageView = UIImageView()
     private lazy var teamBackgroundView: UIView = UIView()
@@ -39,9 +39,10 @@ class AliasTeamsCollectionViewCell: UICollectionViewCell {
         layer.shadowPath = UIBezierPath(roundedRect: backgroundView?.bounds ?? bounds, cornerRadius: 68).cgPath
     }
 
-    func config(teamName: String, teamImage: UIImage) {
+    func config(teamName: String, teamImage: UIImage, backgroundColor: UIColor) {
         teamLabel.text = teamName
         teamImageView.image = teamImage
+        teamBackgroundView.backgroundColor = backgroundColor
     }
 
     private func setUpTeamBackgroundView() {
@@ -49,7 +50,6 @@ class AliasTeamsCollectionViewCell: UICollectionViewCell {
         teamBackgroundView.layer.cornerRadius = 68
         teamBackgroundView.layer.borderWidth = 3
         teamBackgroundView.layer.borderColor = UIColor.white.cgColor
-        teamBackgroundView.backgroundColor = .randomColor()
         teamBackgroundView.snp.makeConstraints { make in
             make.leading.trailing.top.equalToSuperview()
             make.bottom.equalToSuperview().inset(20)

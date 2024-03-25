@@ -26,4 +26,13 @@ class SettingsViewController: UIViewController {
         view = contentView
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        guard let duration = (contentView.durationSegmentControl.titleForSegment(at: contentView.durationSegmentControl.selectedSegmentIndex))
+            else { return }
+        guard let points = (contentView.pointsSegmentControl.titleForSegment(at: contentView.pointsSegmentControl.selectedSegmentIndex))
+            else { return }
+        viewModel.saveSettingsInfo(duration: duration, winPoints: points)
+    }
+
 }
