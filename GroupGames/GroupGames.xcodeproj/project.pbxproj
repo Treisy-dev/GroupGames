@@ -46,7 +46,6 @@
 		C333ABEE2BB01D7500EA100E /* AliasSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABED2BB01D7500EA100E /* AliasSettingsViewController.swift */; };
 		C333ABF02BB01D8B00EA100E /* AliasSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABEF2BB01D8B00EA100E /* AliasSettingsView.swift */; };
 		C333ABF22BB01DAB00EA100E /* AliasSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF12BB01DAB00EA100E /* AliasSettingsViewModel.swift */; };
-		C333ABF42BB0A69100EA100E /* AliasUserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */; };
 		C333ABF72BB0A92600EA100E /* AliasGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF62BB0A92600EA100E /* AliasGameView.swift */; };
 		C333ABF92BB0A93A00EA100E /* AliasGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABF82BB0A93A00EA100E /* AliasGameViewController.swift */; };
 		C333ABFB2BB0A94200EA100E /* AliasGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C333ABFA2BB0A94200EA100E /* AliasGameViewModel.swift */; };
@@ -64,6 +63,7 @@
 		C364B51D2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B51C2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift */; };
 		C364B51F2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B51E2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift */; };
 		C364B5212BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5202BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift */; };
+		C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +107,6 @@
 		C333ABED2BB01D7500EA100E /* AliasSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsViewController.swift; sourceTree = "<group>"; };
 		C333ABEF2BB01D8B00EA100E /* AliasSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsView.swift; sourceTree = "<group>"; };
 		C333ABF12BB01DAB00EA100E /* AliasSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSettingsViewModel.swift; sourceTree = "<group>"; };
-		C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AliasUserDefaultsDataManager.swift; path = "../../../../../../Library/Mobile Documents/.Trash/GroupGames 20.25.57/GroupGames/GroupGames/Alias_Kirill/AliasUserDefaultsDataManager.swift"; sourceTree = "<group>"; };
 		C333ABF62BB0A92600EA100E /* AliasGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameView.swift; sourceTree = "<group>"; };
 		C333ABF82BB0A93A00EA100E /* AliasGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewController.swift; sourceTree = "<group>"; };
 		C333ABFA2BB0A94200EA100E /* AliasGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasGameViewModel.swift; sourceTree = "<group>"; };
@@ -125,6 +124,7 @@
 		C364B51C2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenView.swift; sourceTree = "<group>"; };
 		C364B51E2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenViewController.swift; sourceTree = "<group>"; };
 		C364B5202BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenViewModel.swift; sourceTree = "<group>"; };
+		C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasUserDefaultsDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,7 +331,7 @@
 				C333ABF52BB0A91700EA100E /* AliasGameScreen */,
 				C333ABEC2BB01D6100EA100E /* AliasSettingsScreen */,
 				C333ABEB2BB01CD500EA100E /* AliasTeamsScreen */,
-				C333ABF32BB0A69100EA100E /* AliasUserDefaultsDataManager.swift */,
+				C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */,
 			);
 			path = Alias_Kirill;
 			sourceTree = "<group>";
@@ -590,7 +590,6 @@
 				C333AC012BB0BB3C00EA100E /* AliasScoreViewController.swift in Sources */,
 				78B05A762BB09FFB00D74385 /* SpyGameViewController.swift in Sources */,
 				C333AB992B9F054E00EA100E /* MainView.swift in Sources */,
-				C333ABF42BB0A69100EA100E /* AliasUserDefaultsDataManager.swift in Sources */,
 				C333AC032BB0BB4A00EA100E /* AliasScoreView.swift in Sources */,
 				C364B5212BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift in Sources */,
 				C333AB802B9F03FE00EA100E /* AppDelegate.swift in Sources */,
@@ -619,6 +618,7 @@
 				78B05A7D2BB09FFB00D74385 /* ViewModel.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
 				C364B51D2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift in Sources */,
+				C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */,
 				78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
 				C333ABD32BAFED2E00EA100E /* AliasTeamsView.swift in Sources */,
