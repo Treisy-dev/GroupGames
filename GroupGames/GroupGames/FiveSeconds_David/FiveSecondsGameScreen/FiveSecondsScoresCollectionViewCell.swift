@@ -11,7 +11,7 @@ class FiveSecondsScoresCollectionViewCell: UICollectionViewCell {
 
     private lazy var playerImageView: UIImageView = UIImageView()
     private lazy var playerBackgroundView: UIView = UIView()
-    private lazy var scoreLabel: UILabel = UILabel()
+    lazy var scoreLabel: UILabel = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)

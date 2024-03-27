@@ -7,17 +7,21 @@
 
 import UIKit
 import Koloda
+
 final class FiveSecondsGameScreenViewModel: NSObject, KolodaViewDataSource, UICollectionViewDataSource {
 
     var currentPlayerName = 0
     var currentPlayerScore = 0
     var tasks = ["Назовите 5 десертов", "Назовите 3 вида сыра", "Назовите 4 репера", "Назовите 3 острова", "Назовите 5 царей"]
     var namesPlayers: [(String, UIImage)]
-    var scoresPlayers: [(String, Int)]
+    var scoresPlayers: [String: Int]
 
     init(namesPlayers: [(String, UIImage)]?) {
         self.namesPlayers = namesPlayers ?? []
-        scoresPlayers = []
+        scoresPlayers = [:]
+        for player in namesPlayers ?? [] {
+            scoresPlayers[player.0] = 0
+        }
     }
 
     func koloda(_ koloda: Koloda.KolodaView, viewForCardAt index: Int) -> UIView {
@@ -32,7 +36,6 @@ final class FiveSecondsGameScreenViewModel: NSObject, KolodaViewDataSource, UICo
     }
 
     func kolodaNumberOfCards(_ koloda: Koloda.KolodaView) -> Int {
-
         return tasks.count
     }
 
@@ -45,23 +48,23 @@ final class FiveSecondsGameScreenViewModel: NSObject, KolodaViewDataSource, UICo
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: FiveSecondsScoresCollectionViewCell.reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: FiveSecondsScoresCollectionViewCell.reuseIdentifier, for: indexPath)
                 as? FiveSecondsScoresCollectionViewCell else {
             return UICollectionViewCell()
         }
-        scoresPlayers.append((namesPlayers[indexPath.item].0, 0))
-        cell.config(score: scoresPlayers[indexPath.item].1, teamImage: namesPlayers[indexPath.item].1)
+
+        cell.config(score: scoresPlayers[namesPlayers[indexPath.item].0] ?? 0, teamImage: namesPlayers[indexPath.item].1)
 
         return cell
     }
 
-    func addScore() {
-        scoresPlayers[currentPlayerScore] = (namesPlayers[currentPlayerScore].0, scoresPlayers[currentPlayerScore].1 + 1)
-        if currentPlayerScore < namesPlayers.count - 1 {
-            currentPlayerScore += 1
+    func addScore(bol: Bool) {
+        if bol {
+            scoresPlayers[namesPlayers[currentPlayerScore].0]? += 1
         } else {
-            currentPlayerScore = 0
+            print("нет очка")
         }
+        currentPlayerScore = (currentPlayerScore + 1) % namesPlayers.count
     }
 }
