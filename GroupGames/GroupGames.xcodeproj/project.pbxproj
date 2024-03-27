@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
+		2AF0F6102BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */; };
+		2AF0F6122BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */; };
+		2AF0F6142BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */; };
+		2AF0F6182BB4942A00B27852 /* FiveSecondsGameButtonFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6172BB4942A00B27852 /* FiveSecondsGameButtonFabric.swift */; };
 		78B05A702BB09FFB00D74385 /* SpyMainModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A592BB09FFB00D74385 /* SpyMainModuleIO.swift */; };
 		78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A5A2BB09FFB00D74385 /* SpyMainViewModel.swift */; };
 		78B05A722BB09FFB00D74385 /* SpyMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B05A5B2BB09FFB00D74385 /* SpyMainViewBuilder.swift */; };
@@ -80,6 +84,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenView.swift; sourceTree = "<group>"; };
+		2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewController.swift; sourceTree = "<group>"; };
+		2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewModel.swift; sourceTree = "<group>"; };
+		2AF0F6172BB4942A00B27852 /* FiveSecondsGameButtonFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsGameButtonFabric.swift; sourceTree = "<group>"; };
 		606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.release.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.release.xcconfig"; sourceTree = "<group>"; };
 		6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.debug.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.debug.xcconfig"; sourceTree = "<group>"; };
 		78B05A592BB09FFB00D74385 /* SpyMainModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyMainModuleIO.swift; sourceTree = "<group>"; };
@@ -155,6 +163,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AF0F60E2BB37EDB00B27852 /* FiveSecondsFinalGameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */,
+				2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */,
+				2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */,
+			);
+			path = FiveSecondsFinalGameScreen;
+			sourceTree = "<group>";
+		};
+		2AF0F6152BB493E500B27852 /* UIFabrics */ = {
+			isa = PBXGroup;
+			children = (
+				2AF0F6162BB493F100B27852 /* UIButtonFabric */,
+			);
+			path = UIFabrics;
+			sourceTree = "<group>";
+		};
+		2AF0F6162BB493F100B27852 /* UIButtonFabric */ = {
+			isa = PBXGroup;
+			children = (
+				2AF0F6172BB4942A00B27852 /* FiveSecondsGameButtonFabric.swift */,
+			);
+			path = UIButtonFabric;
+			sourceTree = "<group>";
+		};
 		78B05A562BB09FFB00D74385 /* Spy_Aidar */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +448,8 @@
 		C364B50C2BB1B1A000AC1CB3 /* FiveSeconds_David */ = {
 			isa = PBXGroup;
 			children = (
+				2AF0F6152BB493E500B27852 /* UIFabrics */,
+				2AF0F60E2BB37EDB00B27852 /* FiveSecondsFinalGameScreen */,
 				C364B5192BB1B23C00AC1CB3 /* FiveSecondsPlayersScreen */,
 				C364B50F2BB1B1CC00AC1CB3 /* FiveSecondsGameScreen */,
 			);
@@ -613,10 +649,12 @@
 				78B05A782BB09FFB00D74385 /* SpySettingsModuleIO.swift in Sources */,
 				C333ABD02BAFE7C000EA100E /* GameButtonFubric.swift in Sources */,
 				C364B50E2BB1B1B500AC1CB3 /* FiveSecondsGameScreenView.swift in Sources */,
+				2AF0F6122BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift in Sources */,
 				78B05A702BB09FFB00D74385 /* SpyMainModuleIO.swift in Sources */,
 				C333ABF02BB01D8B00EA100E /* AliasSettingsView.swift in Sources */,
 				C333ABFB2BB0A94200EA100E /* AliasGameViewModel.swift in Sources */,
 				C364B51B2BB1B25300AC1CB3 /* FiveSecondsPlayersCollectionViewCell.swift in Sources */,
+				2AF0F6142BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift in Sources */,
 				C364B5132BB1B1F200AC1CB3 /* FiveSecondsGameScreenViewModel.swift in Sources */,
 				C333ABE62BB008A300EA100E /* AliasTeamsCollectionViewCell.swift in Sources */,
 				78B05A7B2BB09FFB00D74385 /* SpySettingsViewBuilder.swift in Sources */,
@@ -624,8 +662,10 @@
 				C333ABD52BAFED3B00EA100E /* AliasTeamsViewController.swift in Sources */,
 				78B05A742BB09FFB00D74385 /* SpyGameModuleO.swift in Sources */,
 				C364B5152BB1B20300AC1CB3 /* FiveSecondsScoresCollectionViewCell.swift in Sources */,
+				2AF0F6182BB4942A00B27852 /* FiveSecondsGameButtonFabric.swift in Sources */,
 				C333ABEE2BB01D7500EA100E /* AliasSettingsViewController.swift in Sources */,
 				C333ABDE2BAFF9F900EA100E /* UIColorExtension.swift in Sources */,
+				2AF0F6102BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift in Sources */,
 				C333ABEA2BB01BBC00EA100E /* UIImageExtension.swift in Sources */,
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
 				C364B51F2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift in Sources */,

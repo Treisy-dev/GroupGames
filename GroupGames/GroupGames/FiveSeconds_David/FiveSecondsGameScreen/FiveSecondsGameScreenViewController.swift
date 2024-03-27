@@ -48,7 +48,7 @@ class FiveSecondsGameScreenViewController: UIViewController {
             forCellWithReuseIdentifier: FiveSecondsScoresCollectionViewCell.reuseIdentifier)
 
         gameScreenView.exitButtonTapped = {[weak self] in
-            self?.dismiss(animated: true)
+            self?.navigationController?.popViewController(animated: true)
         }
     }
 
@@ -67,18 +67,37 @@ extension FiveSecondsGameScreenViewController: KolodaViewDelegate, UICollectionV
         return [.left, .right]
     }
 
+    func vibrate() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.error) // Можно использовать .success, .warning или .error для различных типов вибрации
+        generator.prepare()
+    }
+
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
-        if self.gameScreenView.kolodaView.currentCardIndex == self.gameScreenView.kolodaView.countOfCards - 1 {
-            self.navigationController?.popViewController(animated: true)
-        }
         if direction == .right {
             gameScreenView.stopTimer()
             gameScreenView.unHiddenCheckButton()
-            viewModel.addScore()
-            gameScreenView.scoresCollectionView.reloadData()
+            viewModel.addScore(bol: true)
+            guard let card = gameScreenView.scoresCollectionView.cellForItem(
+                at: IndexPath(
+                    row: index % viewModel.namesPlayers.count, section: 0))
+                    as? FiveSecondsScoresCollectionViewCell else {return}
+            guard let score = card.scoreLabel.text else {return}
+            guard let intScore = Int(score) else {return}
+            card.scoreLabel.text = String(intScore + 1)
         } else if direction == .left {
+            gameScreenView.startAnimation()
+            vibrate()
             gameScreenView.stopTimer()
             gameScreenView.unHiddenCheckButton()
+            viewModel.addScore(bol: false)
+        }
+        if self.gameScreenView.kolodaView.currentCardIndex == self.gameScreenView.kolodaView.countOfCards {
+            if let bestPlayer = viewModel.scoresPlayers.max(by: { $0.1 < $1.1 }) {
+                self.navigationController?.pushViewController(
+                    FiveSecondsFinalGameScreenViewController(
+                        viewModel: FiveSecondsFinalGameScreenViewModel(playerName: bestPlayer.0, scores: bestPlayer.1)), animated: true)
+            }
         }
     }
 

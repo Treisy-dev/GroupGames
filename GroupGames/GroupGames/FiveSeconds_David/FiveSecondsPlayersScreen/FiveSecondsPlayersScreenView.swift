@@ -18,9 +18,9 @@ class FiveSecondsPlayersScreenView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         return collectionView
     }()
-    private lazy var startButton: UIButton = UIButton()
-    private lazy var addPlayerButton: UIButton = UIButton()
-    private lazy var exitButton: UIButton = UIButton()
+    private lazy var startButton = FiveSecondsGameButtonFabric.shared.makeTransparentButton(title: "Начать игру")
+    private lazy var addPlayerButton = FiveSecondsGameButtonFabric.shared.makeTransparentButton(title: "+")
+    private lazy var exitButton = FiveSecondsGameButtonFabric.shared.makeExitButton()
 
     var nextTapped: (() -> Void)?
     var addPlayerTapped: (() -> Void)?
@@ -92,18 +92,10 @@ class FiveSecondsPlayersScreenView: UIView {
 
     private func setUpStartButton() {
         addSubview(startButton)
-        startButton.setTitle("Продолжить", for: .normal)
-        startButton.setTitleColor(.white, for: .normal)
-        startButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        startButton.backgroundColor = .clear.withAlphaComponent(0.2)
-        startButton.layer.cornerRadius = 15
-        startButton.layer.borderWidth = 3
-        startButton.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
         let nextAction: UIAction = UIAction { [weak self] _ in
             self?.nextTapped?()
         }
         startButton.addAction(nextAction, for: .touchUpInside)
-
         startButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalToSuperview().inset(20)
@@ -114,17 +106,10 @@ class FiveSecondsPlayersScreenView: UIView {
 
     private func setUpAddPLayerButton() {
         addSubview(addPlayerButton)
-        addPlayerButton.backgroundColor = .clear.withAlphaComponent(0.2)
-        addPlayerButton.layer.cornerRadius = 10
-        addPlayerButton.layer.borderWidth = 3
-        addPlayerButton.setTitle("+", for: .normal)
-        addPlayerButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 26)
-        addPlayerButton.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
         let optionsAction: UIAction = UIAction { [weak self] _ in
             self?.addPlayerTapped?()
         }
         addPlayerButton.addAction(optionsAction, for: .touchUpInside)
-
         addPlayerButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalTo(startButton.snp.leading).inset(-10)
@@ -135,8 +120,6 @@ class FiveSecondsPlayersScreenView: UIView {
 
     private func setUpExitButton() {
         addSubview(exitButton)
-        exitButton.backgroundColor  = .clear
-        exitButton.setImage(.exit5S, for: .normal)
         let optionsAction: UIAction = UIAction { [weak self] _ in
             self?.exitButtonTapped?()
         }

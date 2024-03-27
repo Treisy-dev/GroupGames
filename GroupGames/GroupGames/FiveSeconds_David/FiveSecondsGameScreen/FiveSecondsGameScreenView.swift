@@ -14,11 +14,9 @@ class FiveSecondsGameScreenView: UIView {
     lazy var kolodaView: KolodaView = KolodaView()
     private lazy var nameLabel: UILabel = UILabel()
     private lazy var taskLabel: UILabel = UILabel()
-    private lazy var checkTaskButtom: UIButton = UIButton()
-    private lazy var noButton: UIButton = UIButton()
-    private lazy var yesButton: UIButton = UIButton()
+    private lazy var checkTaskButton = FiveSecondsGameButtonFabric.shared.makeTransparentButton(title: "Посмотреть задание")
     private lazy var timerLabel: UILabel = UILabel()
-    private lazy var exitButton: UIButton = UIButton()
+    private lazy var exitButton = FiveSecondsGameButtonFabric.shared.makeExitButton()
     lazy var scoresCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 10
@@ -131,23 +129,18 @@ class FiveSecondsGameScreenView: UIView {
     }
 
     func unHiddenCheckButton() {
-        checkTaskButtom.isHidden = false
+        checkTaskButton.isHidden = false
     }
 
     private func setUpCheckTaskButton() {
-        addSubview(checkTaskButtom)
-        checkTaskButtom.setTitle("Посмотреть задание", for: .normal)
-        checkTaskButtom.backgroundColor = .clear.withAlphaComponent(0.2)
-        checkTaskButtom.layer.cornerRadius = 15
-        checkTaskButtom.layer.borderWidth = 3
-        checkTaskButtom.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
+        addSubview(checkTaskButton)
         let action: UIAction = UIAction { [weak self] _ in
             self?.checkTaskTappedClosure?()
-            self?.checkTaskButtom.isHidden = true
+            self?.checkTaskButton.isHidden = true
 
         }
-        checkTaskButtom.addAction(action, for: .touchUpInside)
-        checkTaskButtom.snp.makeConstraints { make in
+        checkTaskButton.addAction(action, for: .touchUpInside)
+        checkTaskButton.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().inset(20)
             make.height.equalTo(60)
@@ -157,8 +150,6 @@ class FiveSecondsGameScreenView: UIView {
 
     private func setUpExitButton() {
         addSubview(exitButton)
-        exitButton.backgroundColor  = .clear
-        exitButton.setImage(.exit5S, for: .normal)
         let optionsAction: UIAction = UIAction { [weak self] _ in
             self?.exitButtonTapped?()
         }
@@ -168,5 +159,17 @@ class FiveSecondsGameScreenView: UIView {
             make.leading.equalToSuperview().offset(20)
             make.width.height.equalTo(40)
         }
+    }
+}
+extension FiveSecondsGameScreenView {
+    func startAnimation() {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.1
+        animation.repeatCount = 3
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 5, y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 5, y: self.center.y))
+
+        self.layer.add(animation, forKey: "position")
     }
 }

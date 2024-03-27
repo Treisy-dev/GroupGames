@@ -34,7 +34,7 @@ class FiveSecondsPlayersScreenViewController: UIViewController {
             FiveSecondsPlayersCollectionViewCell.self,
             forCellWithReuseIdentifier: FiveSecondsPlayersCollectionViewCell.reuseIdentifier)
         contentView.nextTapped = {[weak self] in
-            self?.navigationController?.present(
+            self?.navigationController?.pushViewController(
                 FiveSecondsGameScreenViewController(
                     viewModel: FiveSecondsGameScreenViewModel(namesPlayers: self?.viewModel.firstsPlayers)), animated: true)
         }
