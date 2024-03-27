@@ -66,6 +66,19 @@
 		C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C364B5252BB48B4300AC1CB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		606D3EBCFDE5960D8FA50C2D /* Pods-GroupGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.release.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.release.xcconfig"; sourceTree = "<group>"; };
 		6BFD472E6CBFA7BAA093571C /* Pods-GroupGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupGames.debug.xcconfig"; path = "Target Support Files/Pods-GroupGames/Pods-GroupGames.debug.xcconfig"; sourceTree = "<group>"; };
@@ -451,6 +464,7 @@
 				C333AB7A2B9F03FE00EA100E /* Resources */,
 				C333AB962B9F043E00EA100E /* ShellScript */,
 				1C8EC1928E5107B890CD668A /* [CP] Embed Pods Frameworks */,
+				C364B5252BB48B4300AC1CB3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
