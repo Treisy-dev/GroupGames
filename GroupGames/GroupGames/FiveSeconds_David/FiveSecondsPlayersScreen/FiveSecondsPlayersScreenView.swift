@@ -39,7 +39,7 @@ class FiveSecondsPlayersScreenView: UIView {
     private func setUp() {
         setUpContentView()
         setUpContentViewTitleLabel()
-        setUpTeamsCollectionView()
+        setUpPlayersCollectionView()
         setUpStartButton()
         setUpAddPLayerButton()
         setUpBackground()
@@ -79,7 +79,7 @@ class FiveSecondsPlayersScreenView: UIView {
         }
     }
 
-    private func setUpTeamsCollectionView() {
+    private func setUpPlayersCollectionView() {
         playersContentView.addSubview(playersCollectionView)
         playersCollectionView.backgroundColor = .clear
         playersCollectionView.snp.makeConstraints { make in
