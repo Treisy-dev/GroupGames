@@ -7,12 +7,11 @@
 import SnapKit
 import UIKit
 
-enum AccessibilityIdentifiers {
-    static let backButton = "backButton"
-    static let startButton = "startButton"
-    static let optionButton = "optionButton"
-    static let contentViewTitleLabel = "contentViewTitleLabel"
-
+enum AccessibilityIdentifiersAlias {
+    static let backButtonAlias = "backButton"
+    static let startButtonAlias = "startButton"
+    static let optionButtonAlias = "optionButton"
+    static let contentViewTitleLabelAlias = "contentViewTitleLabel"
 }
 
 class AliasTeamsView: UIView {
@@ -73,7 +72,7 @@ class AliasTeamsView: UIView {
         contentViewTitleLabel.numberOfLines = 2
         contentViewTitleLabel.textAlignment = .center
         contentViewTitleLabel.textColor = .systemRed.withAlphaComponent(0.7)
-        contentViewTitleLabel.accessibilityIdentifier = AccessibilityIdentifiers.contentViewTitleLabel
+        contentViewTitleLabel.accessibilityIdentifier = AccessibilityIdentifiersAlias.contentViewTitleLabelAlias
         contentViewTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.centerX.equalToSuperview()
@@ -98,7 +97,7 @@ class AliasTeamsView: UIView {
             self?.nextTapped?()
         }
         startButton.addAction(nextAction, for: .touchUpInside)
-        startButton.accessibilityIdentifier = AccessibilityIdentifiers.startButton
+        startButton.accessibilityIdentifier = AccessibilityIdentifiersAlias.startButtonAlias
 
         startButton.snp.makeConstraints { make in
             make.top.equalTo(aliasContentView.snp.bottom).offset(10)
@@ -121,7 +120,7 @@ class AliasTeamsView: UIView {
             self?.optionsTapped?()
         }
         optionButton.addAction(optionsAction, for: .touchUpInside)
-        optionButton.accessibilityIdentifier = AccessibilityIdentifiers.optionButton
+        optionButton.accessibilityIdentifier = AccessibilityIdentifiersAlias.optionButtonAlias
 
         optionButton.snp.makeConstraints { make in
             make.top.equalTo(aliasContentView.snp.bottom).offset(10)
@@ -137,7 +136,7 @@ class AliasTeamsView: UIView {
             self?.backTapped?()
         }
         backButton.addAction(backAction, for: .touchUpInside)
-        backButton.accessibilityIdentifier = AccessibilityIdentifiers.backButton
+        backButton.accessibilityIdentifier = AccessibilityIdentifiersAlias.backButtonAlias
 
         backButton.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
