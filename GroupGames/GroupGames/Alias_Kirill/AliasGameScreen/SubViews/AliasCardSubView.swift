@@ -14,6 +14,7 @@ class AliasCardSubView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
+        layer.cornerRadius = 20
         layer.borderWidth = 4
         layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
         setUp()

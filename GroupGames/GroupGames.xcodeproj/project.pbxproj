@@ -74,6 +74,8 @@
 		C364B5D52BC30ADF00AC1CB3 /* FiveSecondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5D42BC30ADF00AC1CB3 /* FiveSecondTests.swift */; };
 		C364B5E22BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5E12BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift */; };
 		C364B5EF2BC30B1000AC1CB3 /* FiveSecondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5EE2BC30B1000AC1CB3 /* FiveSecondsUITests.swift */; };
+		C364B5FA2BC30EF300AC1CB3 /* GradientSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5F92BC30EF300AC1CB3 /* GradientSubView.swift */; };
+		C364B5FC2BC3246700AC1CB3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C364B5FB2BC3246700AC1CB3 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +211,7 @@
 		C364B5E12BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondSnapshotTests.swift; sourceTree = "<group>"; };
 		C364B5EC2BC30B1000AC1CB3 /* FiveSecondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C364B5EE2BC30B1000AC1CB3 /* FiveSecondsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsUITests.swift; sourceTree = "<group>"; };
+		C364B5F92BC30EF300AC1CB3 /* GradientSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C364B5FC2BC3246700AC1CB3 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				C333ABFD2BB0AA5000EA100E /* AliasCardSubView.swift */,
+				C364B5F92BC30EF300AC1CB3 /* GradientSubView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -729,6 +734,9 @@
 				C364B5BA2BC30AB100AC1CB3 /* PBXTargetDependency */,
 			);
 			name = AliasSnapshotTests;
+			packageProductDependencies = (
+				C364B5FB2BC3246700AC1CB3 /* SnapshotTesting */,
+			);
 			productName = AliasSnapshotTests;
 			productReference = C364B5B52BC30AB100AC1CB3 /* AliasSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1036,6 +1044,7 @@
 				C364B51D2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift in Sources */,
 				C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */,
 				78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */,
+				C364B5FA2BC30EF300AC1CB3 /* GradientSubView.swift in Sources */,
 				C333AB9D2B9F056400EA100E /* MainViewModel.swift in Sources */,
 				C333ABD32BAFED2E00EA100E /* AliasTeamsView.swift in Sources */,
 				C333ABD72BAFED4800EA100E /* AliasTeamsViewModel.swift in Sources */,
@@ -1662,6 +1671,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C333ABC82BAF1F3400EA100E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		C364B5FB2BC3246700AC1CB3 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5F82BC30B6D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 

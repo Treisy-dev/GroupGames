@@ -6,6 +6,8 @@ disabled_rules:
 excluded:
   - Carthage
   - Pods
+  - AliasTests
+  - FiveSecondsTests
 
 identifier_name:
   excluded:
