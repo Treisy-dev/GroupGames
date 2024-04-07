@@ -12,12 +12,12 @@ final class SpySettingsViewBuilder {
 
     // MARK: Private properties
 
-    private let output: SpySettingsModuleOutput
+    private let output: SpySettingsModuleOutput?
     private let settings: Settings
 
     // MARK: Initializators
 
-    init(output: SpySettingsModuleOutput, settings: Settings) {
+    init(output: SpySettingsModuleOutput?, settings: Settings) {
         self.output = output
         self.settings = settings
     }
