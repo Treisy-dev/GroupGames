@@ -10,6 +10,7 @@ import UIKit
 
 class AliasGameView: UIView {
 
+    lazy var gradientSubView: GradientSubView = GradientSubView()
     lazy var yesButton: UIButton = UIButton()
     lazy var noButton: UIButton = UIButton()
     lazy var kolodaView: KolodaView = KolodaView()
@@ -23,8 +24,6 @@ class AliasGameView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
-        layer.borderWidth = 4
-        layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
         setUp()
     }
 
@@ -33,11 +32,32 @@ class AliasGameView: UIView {
     }
 
     private func setUp() {
+        setUpGradientSubView()
         setUpTimerLabel()
         startTimer()
         setUpKolodaView()
         setUpYesButton()
         setUpNoButton()
+    }
+
+    private func setUpGradientSubView() {
+        addSubview(gradientSubView)
+        gradientSubView.backgroundColor = .clear
+        gradientSubView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    private func setUpTimerLabel() {
+        gradientSubView.addSubview(timerLabel)
+        timerLabel.text = String(remainingTime)
+        timerLabel.textAlignment = .center
+        timerLabel.font = UIFont.systemFont(ofSize: 24)
+        timerLabel.textColor = .black
+        timerLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(60)
+        }
     }
 
     private func startTimer() {
@@ -52,22 +72,10 @@ class AliasGameView: UIView {
         }
     }
 
-    private func setUpTimerLabel() {
-        addSubview(timerLabel)
-        timerLabel.text = String(remainingTime)
-        timerLabel.textAlignment = .center
-        timerLabel.font = UIFont.systemFont(ofSize: 24)
-        timerLabel.textColor = .black
-        timerLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(60)
-        }
-    }
-
     private func setUpKolodaView() {
-        addSubview(kolodaView)
+        gradientSubView.addSubview(kolodaView)
         kolodaView.backgroundColor = .white
-        kolodaView.layer.cornerRadius = 10
+        kolodaView.layer.cornerRadius = 20
         kolodaView.layer.masksToBounds = false
         kolodaView.layer.shadowColor = UIColor.black.cgColor
         kolodaView.layer.shadowOpacity = 0.5
@@ -83,7 +91,7 @@ class AliasGameView: UIView {
     }
 
     private func setUpYesButton() {
-        addSubview(yesButton)
+        gradientSubView.addSubview(yesButton)
         yesButton.layer.cornerRadius = 15
         yesButton.layer.borderWidth = 2
         yesButton.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor
@@ -105,7 +113,7 @@ class AliasGameView: UIView {
     }
 
     private func setUpNoButton() {
-        addSubview(noButton)
+        gradientSubView.addSubview(noButton)
         noButton.layer.cornerRadius = 15
         noButton.layer.borderWidth = 2
         noButton.layer.borderColor = UIColor.systemBlue.withAlphaComponent(1.1).cgColor

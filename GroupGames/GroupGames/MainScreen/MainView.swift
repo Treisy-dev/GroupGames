@@ -79,6 +79,7 @@ final class MainView: UIView {
             self?.delegate?.didAliasButtonTapped()
         }
         aliasButton.addAction(aliasAction, for: .touchUpInside)
+        aliasButton.accessibilityIdentifier = "aliasButton"
         aliasButton.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(50)
             make.width.equalTo(130)

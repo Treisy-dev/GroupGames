@@ -7,6 +7,14 @@
 import SnapKit
 import UIKit
 
+enum AccessibilityIdentifiers {
+    static let backButton = "backButton"
+    static let startButton = "startButton"
+    static let optionButton = "optionButton"
+    static let contentViewTitleLabel = "contentViewTitleLabel"
+
+}
+
 class AliasTeamsView: UIView {
     private lazy var backButton: UIButton = GameButtonFubric.shared.makeBackButton()
     private lazy var aliasContentView: UIView = UIView()
@@ -65,6 +73,7 @@ class AliasTeamsView: UIView {
         contentViewTitleLabel.numberOfLines = 2
         contentViewTitleLabel.textAlignment = .center
         contentViewTitleLabel.textColor = .systemRed.withAlphaComponent(0.7)
+        contentViewTitleLabel.accessibilityIdentifier = AccessibilityIdentifiers.contentViewTitleLabel
         contentViewTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.centerX.equalToSuperview()
@@ -89,6 +98,7 @@ class AliasTeamsView: UIView {
             self?.nextTapped?()
         }
         startButton.addAction(nextAction, for: .touchUpInside)
+        startButton.accessibilityIdentifier = AccessibilityIdentifiers.startButton
 
         startButton.snp.makeConstraints { make in
             make.top.equalTo(aliasContentView.snp.bottom).offset(10)
@@ -111,6 +121,7 @@ class AliasTeamsView: UIView {
             self?.optionsTapped?()
         }
         optionButton.addAction(optionsAction, for: .touchUpInside)
+        optionButton.accessibilityIdentifier = AccessibilityIdentifiers.optionButton
 
         optionButton.snp.makeConstraints { make in
             make.top.equalTo(aliasContentView.snp.bottom).offset(10)
@@ -126,6 +137,7 @@ class AliasTeamsView: UIView {
             self?.backTapped?()
         }
         backButton.addAction(backAction, for: .touchUpInside)
+        backButton.accessibilityIdentifier = AccessibilityIdentifiers.backButton
 
         backButton.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)

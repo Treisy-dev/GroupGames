@@ -6,30 +6,57 @@
 //
 
 import XCTest
+@testable import GroupGames
 
 final class AliasTest: XCTestCase {
 
+    private var dataManager: AliasUserDefaultsDataManager!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        dataManager = AliasUserDefaultsDataManager.shared
+        dataManager.userDefaults.removeObject(forKey: "settingsInfo")
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        dataManager.userDefaults.removeObject(forKey: "settingsInfo")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testUpdateSettingsData_WhenNoDataExists_CreatesDefaultSettings() {
+        dataManager.updateSettingsData()
+
+        let settings = dataManager.getSettingsData()
+        XCTAssertEqual(settings["duration"], "30")
+        XCTAssertEqual(settings["winPoints"], "25")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testUpdateSettingsData_WhenDataExists_PrintsExistingData() {
+        let mockData = ["duration": "45", "winPoints": "30"]
+        dataManager.userDefaults.set(mockData, forKey: "settingsInfo")
+        let obtainedData = dataManager.getSettingsData()
+
+        XCTAssertEqual(mockData["duration"], obtainedData["duration"])
+        XCTAssertEqual(mockData["winPoints"], obtainedData["winPoints"])
     }
 
+    func testGetDuration_WhenNoDataExists_ReturnsDefaultDuration() {
+        XCTAssertEqual(dataManager.getDuration(), 30)
+    }
+
+    func testGetDuration_WhenValidDataExists_ReturnsParsedInt() {
+        let mockData = ["duration": "60"]
+        dataManager.userDefaults.set(mockData, forKey: "settingsInfo")
+
+        XCTAssertEqual(dataManager.getDuration(), 60)
+    }
+
+    func testGetWinPoints_WhenNoDataExists_ReturnsDefaultWinPoints() {
+        XCTAssertEqual(dataManager.getWinPoints(), 25)
+    }
+
+    func testGetWinPoints_WhenValidDataExists_ReturnsParsedInt() {
+        let mockData = ["winPoints": "40"]
+        dataManager.userDefaults.set(mockData, forKey: "settingsInfo")
+
+        XCTAssertEqual(dataManager.getWinPoints(), 40)
+    }
 }
