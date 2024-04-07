@@ -18,22 +18,22 @@ final class AliasUITests: XCTestCase {
         backButton.tap()
     }
 
-    func testBackButton_isExist() throws {
+    func testBackButtonTap_CallsBackClosure() throws {
         let backButton = app.buttons["backButton"]
         XCTAssertTrue(backButton.exists)
     }
 
-    func testStartButton_isExist() throws {
+    func testNextButtonTap_PushesScoreViewController() throws {
         let startButton = app.buttons["startButton"]
         XCTAssertTrue(startButton.exists)
     }
 
-    func testOptionsButton_isExist() throws {
+    func testOptionsButtonTap_CallsBackClosure() throws {
         let optionsButton = app.buttons["optionButton"]
         XCTAssertTrue(optionsButton.exists)
     }
 
-    func testContentViewTitleLabelText_isExist_and_SetsCorrectText() throws {
+    func testContentViewTitleLabelText_SetsCorrectText() throws {
         let contentViewTitleLabel = app.staticTexts["contentViewTitleLabel"]
         XCTAssertTrue(contentViewTitleLabel.exists)
         XCTAssertEqual(contentViewTitleLabel.label, "Разделитесь на команды")

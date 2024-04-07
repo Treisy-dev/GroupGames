@@ -8,9 +8,9 @@
 import UIKit
 import SnapKit
 
-enum AccessibilityIdentifiers {
-    static let startButton = "startButton"
-    static let exitButton = "exitButton"
+enum AccessibilityIdentifiersSpy {
+    static let startButton = "startButtonSpy"
+    static let exitButton = "exitButtonSpy"
 }
 
 final class SpyMainViewController: UIViewController {
@@ -32,7 +32,7 @@ final class SpyMainViewController: UIViewController {
         let button = UIButton(primaryAction: action)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Start", for: .normal)
-        button.accessibilityIdentifier = AccessibilityIdentifiers.startButton
+        button.accessibilityIdentifier = AccessibilityIdentifiersSpy.startButton
         return button
     }()
 
@@ -53,7 +53,7 @@ final class SpyMainViewController: UIViewController {
         let button = UIButton(primaryAction: action)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Exit", for: .normal)
-        button.accessibilityIdentifier = AccessibilityIdentifiers.exitButton
+        button.accessibilityIdentifier = AccessibilityIdentifiersSpy.exitButton
         return button
     }()
 

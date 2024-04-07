@@ -122,7 +122,7 @@ final class SpyGameViewController: UIViewController {
                 viewModel.trigger(.starTimer)
             }
         } else {
-            if let card = viewModel.cards?.first {
+            if let _ = viewModel.cards?.first {
                 cardView.text = "Нажмите"
                 return
             }
