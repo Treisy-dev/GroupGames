@@ -59,8 +59,8 @@ final class FiveSecondsGameScreenViewModel: NSObject, KolodaViewDataSource, UICo
         return cell
     }
 
-    func addScore(bol: Bool) {
-        if bol {
+    func addScore(flag: Bool) {
+        if flag {
             scoresPlayers[namesPlayers[currentPlayerScore].0]? += 1
         } else {
             print("нет очка")

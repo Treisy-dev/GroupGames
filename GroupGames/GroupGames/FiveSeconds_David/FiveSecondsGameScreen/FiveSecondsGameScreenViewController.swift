@@ -77,7 +77,7 @@ extension FiveSecondsGameScreenViewController: KolodaViewDelegate, UICollectionV
         if direction == .right {
             gameScreenView.stopTimer()
             gameScreenView.unHiddenCheckButton()
-            viewModel.addScore(bol: true)
+            viewModel.addScore(flag: true)
             guard let card = gameScreenView.scoresCollectionView.cellForItem(
                 at: IndexPath(
                     row: index % viewModel.namesPlayers.count, section: 0))
@@ -90,7 +90,7 @@ extension FiveSecondsGameScreenViewController: KolodaViewDelegate, UICollectionV
             vibrate()
             gameScreenView.stopTimer()
             gameScreenView.unHiddenCheckButton()
-            viewModel.addScore(bol: false)
+            viewModel.addScore(flag: false)
         }
         if self.gameScreenView.kolodaView.currentCardIndex == self.gameScreenView.kolodaView.countOfCards {
             if let bestPlayer = viewModel.scoresPlayers.max(by: { $0.1 < $1.1 }) {

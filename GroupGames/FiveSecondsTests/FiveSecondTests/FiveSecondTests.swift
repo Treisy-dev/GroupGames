@@ -6,30 +6,62 @@
 //
 
 import XCTest
+@testable import GroupGames
+final class FiveSecondsFinalGamesScreenViewModelTests: XCTestCase {
 
-final class FiveSecondTests: XCTestCase {
+    var viewModel: FiveSecondsFinalGameScreenViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel = FiveSecondsFinalGameScreenViewModel(playerName: "Alice", scores: 100)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testGetPlayer() {
+        XCTAssertEqual(viewModel.getPlayer(), "Alice")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testGetScores() {
+        XCTAssertEqual(viewModel.getScores(), 100)
+    }
+}
+
+final class FiveSecondsGameScreenViewModelTests: XCTestCase {
+
+    var viewModel: FiveSecondsGameScreenViewModel!
+
+    override func setUpWithError() throws {
+        viewModel = FiveSecondsGameScreenViewModel(namesPlayers: [("Player1", UIImage()), ("Player2", UIImage())])
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testAddScore() {
+        // Given
+        let currentPlayerScoreBefore = viewModel.currentPlayerScore
+
+        // When
+        viewModel.addScore(flag: true)
+
+        // Then
+        XCTAssertEqual(viewModel.scoresPlayers[viewModel.namesPlayers[currentPlayerScoreBefore].0], 1)
+        XCTAssertEqual(viewModel.currentPlayerScore, (currentPlayerScoreBefore + 1) % viewModel.namesPlayers.count)
+    }
+}
+
+final class FiveSecondsPlayersScreenViewModelTests: XCTestCase {
+
+    var viewModel: FiveSecondsPlayersScreenViewModel!
+
+    override func setUpWithError() throws {
+        viewModel = FiveSecondsPlayersScreenViewModel()
     }
 
+    func test_Player_Addition() {
+        // Given
+
+        let initialCount = viewModel.firstsPlayers.count
+
+        // When
+        viewModel.addPlayer()
+
+        // Then
+        XCTAssertEqual(viewModel.firstsPlayers.count, initialCount + 1)
+    }
 }

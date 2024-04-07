@@ -6,6 +6,12 @@
 //
 import SnapKit
 import UIKit
+enum AccessibilityIdentifiersFiveSeconds {
+    static let addPlayerButtonFiveSeconds = "addPlayerButton"
+    static let startButtonFiveSeconds  = "startButton"
+    static let exitButtonFiveSeconds  = "exitButton"
+    static let contentViewTitleLabelFiveSeconds = "contentViewTitleLabel"
+}
 
 class FiveSecondsPlayersScreenView: UIView {
 
@@ -71,6 +77,7 @@ class FiveSecondsPlayersScreenView: UIView {
         contentViewTitleLabel.numberOfLines = 2
         contentViewTitleLabel.textAlignment = .center
         contentViewTitleLabel.textColor = .white
+        contentViewTitleLabel.accessibilityIdentifier = AccessibilityIdentifiersFiveSeconds.contentViewTitleLabelFiveSeconds
         contentViewTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.centerX.equalToSuperview()
@@ -96,6 +103,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.nextTapped?()
         }
         startButton.addAction(nextAction, for: .touchUpInside)
+        startButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSeconds.startButtonFiveSeconds
         startButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalToSuperview().inset(20)
@@ -110,6 +118,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.addPlayerTapped?()
         }
         addPlayerButton.addAction(optionsAction, for: .touchUpInside)
+        addPlayerButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSeconds.addPlayerButtonFiveSeconds
         addPlayerButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalTo(startButton.snp.leading).inset(-10)
@@ -124,6 +133,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.exitButtonTapped?()
         }
         exitButton.addAction(optionsAction, for: .touchUpInside)
+        exitButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSeconds.exitButtonFiveSeconds
         exitButton.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(64)
             make.leading.equalToSuperview().offset(20)
