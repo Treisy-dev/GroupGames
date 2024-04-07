@@ -68,7 +68,36 @@
 		C364B51F2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B51E2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift */; };
 		C364B5212BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5202BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift */; };
 		C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */; };
+		C364B5772BC2FE4D00AC1CB3 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C364B5762BC2FE4D00AC1CB3 /* InlineSnapshotTesting */; };
+		C364B5792BC2FE4D00AC1CB3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C364B5782BC2FE4D00AC1CB3 /* SnapshotTesting */; };
+		C364B5812BC2FFB700AC1CB3 /* AliasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5802BC2FFB700AC1CB3 /* AliasTests.swift */; };
+		C364B58E2BC2FFD600AC1CB3 /* AliasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B58D2BC2FFD600AC1CB3 /* AliasUITests.swift */; };
+		C364B59E2BC300C700AC1CB3 /* AliasSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B59D2BC300C700AC1CB3 /* AliasSnapshotTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C364B5822BC2FFB700AC1CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
+		C364B5912BC2FFD600AC1CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
+		C364B59F2BC300C700AC1CB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C364B5252BB48B4300AC1CB3 /* Embed Frameworks */ = {
@@ -146,6 +175,12 @@
 		C364B51E2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenViewController.swift; sourceTree = "<group>"; };
 		C364B5202BB1B28600AC1CB3 /* FiveSecondsPlayersScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenViewModel.swift; sourceTree = "<group>"; };
 		C364B5222BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasUserDefaultsDataManager.swift; sourceTree = "<group>"; };
+		C364B57E2BC2FFB700AC1CB3 /* AliasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C364B5802BC2FFB700AC1CB3 /* AliasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTests.swift; sourceTree = "<group>"; };
+		C364B58B2BC2FFD600AC1CB3 /* AliasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C364B58D2BC2FFD600AC1CB3 /* AliasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasUITests.swift; sourceTree = "<group>"; };
+		C364B59B2BC300C700AC1CB3 /* AliasSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C364B59D2BC300C700AC1CB3 /* AliasSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +191,30 @@
 				2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */,
 				C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */,
 				C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */,
+				C364B5792BC2FE4D00AC1CB3 /* SnapshotTesting in Frameworks */,
 				A53B64897EDBAAF1B773C1CB /* Pods_GroupGames.framework in Frameworks */,
+				C364B5772BC2FE4D00AC1CB3 /* InlineSnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B57B2BC2FFB700AC1CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5882BC2FFD600AC1CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5982BC300C700AC1CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				C333AB7E2B9F03FE00EA100E /* GroupGames */,
+				C364B5962BC2FFDF00AC1CB3 /* AliasTest */,
 				C333AB7D2B9F03FE00EA100E /* Products */,
 				9D4826AB0D67CE465D4A0259 /* Pods */,
 				A7028F41942BB3DE98DBEC15 /* Frameworks */,
@@ -322,6 +381,9 @@
 			isa = PBXGroup;
 			children = (
 				C333AB7C2B9F03FE00EA100E /* GroupGames.app */,
+				C364B57E2BC2FFB700AC1CB3 /* AliasTests.xctest */,
+				C364B58B2BC2FFD600AC1CB3 /* AliasUITests.xctest */,
+				C364B59B2BC300C700AC1CB3 /* AliasSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -487,6 +549,40 @@
 			path = FiveSecondsPlayersScreen;
 			sourceTree = "<group>";
 		};
+		C364B57F2BC2FFB700AC1CB3 /* AliasTests */ = {
+			isa = PBXGroup;
+			children = (
+				C364B5802BC2FFB700AC1CB3 /* AliasTests.swift */,
+			);
+			path = AliasTests;
+			sourceTree = "<group>";
+		};
+		C364B58C2BC2FFD600AC1CB3 /* AliasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C364B58D2BC2FFD600AC1CB3 /* AliasUITests.swift */,
+			);
+			path = AliasUITests;
+			sourceTree = "<group>";
+		};
+		C364B5962BC2FFDF00AC1CB3 /* AliasTest */ = {
+			isa = PBXGroup;
+			children = (
+				C364B59C2BC300C700AC1CB3 /* AliasSnapshotTests */,
+				C364B57F2BC2FFB700AC1CB3 /* AliasTests */,
+				C364B58C2BC2FFD600AC1CB3 /* AliasUITests */,
+			);
+			path = AliasTest;
+			sourceTree = "<group>";
+		};
+		C364B59C2BC300C700AC1CB3 /* AliasSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				C364B59D2BC300C700AC1CB3 /* AliasSnapshotTests.swift */,
+			);
+			path = AliasSnapshotTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -511,10 +607,66 @@
 				C333ABC92BAF1F3400EA100E /* SnapKit */,
 				C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */,
 				2AACDC372BAF26E4000672B0 /* Alamofire */,
+				C364B5762BC2FE4D00AC1CB3 /* InlineSnapshotTesting */,
+				C364B5782BC2FE4D00AC1CB3 /* SnapshotTesting */,
 			);
 			productName = GroupGames;
 			productReference = C333AB7C2B9F03FE00EA100E /* GroupGames.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C364B57D2BC2FFB700AC1CB3 /* AliasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C364B5862BC2FFB700AC1CB3 /* Build configuration list for PBXNativeTarget "AliasTests" */;
+			buildPhases = (
+				C364B57A2BC2FFB700AC1CB3 /* Sources */,
+				C364B57B2BC2FFB700AC1CB3 /* Frameworks */,
+				C364B57C2BC2FFB700AC1CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C364B5832BC2FFB700AC1CB3 /* PBXTargetDependency */,
+			);
+			name = AliasTests;
+			productName = AliasTests;
+			productReference = C364B57E2BC2FFB700AC1CB3 /* AliasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C364B58A2BC2FFD600AC1CB3 /* AliasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C364B5932BC2FFD600AC1CB3 /* Build configuration list for PBXNativeTarget "AliasUITests" */;
+			buildPhases = (
+				C364B5872BC2FFD600AC1CB3 /* Sources */,
+				C364B5882BC2FFD600AC1CB3 /* Frameworks */,
+				C364B5892BC2FFD600AC1CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C364B5922BC2FFD600AC1CB3 /* PBXTargetDependency */,
+			);
+			name = AliasUITests;
+			productName = AliasUITests;
+			productReference = C364B58B2BC2FFD600AC1CB3 /* AliasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C364B59A2BC300C700AC1CB3 /* AliasSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C364B5A12BC300C700AC1CB3 /* Build configuration list for PBXNativeTarget "AliasSnapshotTests" */;
+			buildPhases = (
+				C364B5972BC300C700AC1CB3 /* Sources */,
+				C364B5982BC300C700AC1CB3 /* Frameworks */,
+				C364B5992BC300C700AC1CB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C364B5A02BC300C700AC1CB3 /* PBXTargetDependency */,
+			);
+			name = AliasSnapshotTests;
+			productName = AliasSnapshotTests;
+			productReference = C364B59B2BC300C700AC1CB3 /* AliasSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -528,6 +680,18 @@
 				TargetAttributes = {
 					C333AB7B2B9F03FE00EA100E = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					C364B57D2BC2FFB700AC1CB3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
+					};
+					C364B58A2BC2FFD600AC1CB3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
+					};
+					C364B59A2BC300C700AC1CB3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
 					};
 				};
 			};
@@ -543,12 +707,16 @@
 			packageReferences = (
 				C333ABC82BAF1F3400EA100E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2AACDC362BAF26E4000672B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C364B5752BC2FE4D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = C333AB7D2B9F03FE00EA100E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C333AB7B2B9F03FE00EA100E /* GroupGames */,
+				C364B57D2BC2FFB700AC1CB3 /* AliasTests */,
+				C364B58A2BC2FFD600AC1CB3 /* AliasUITests */,
+				C364B59A2BC300C700AC1CB3 /* AliasSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -560,6 +728,27 @@
 			files = (
 				C333AB8F2B9F040000EA100E /* LaunchScreen.storyboard in Resources */,
 				C333AB8C2B9F040000EA100E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B57C2BC2FFB700AC1CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5892BC2FFD600AC1CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5992BC300C700AC1CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +878,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C364B57A2BC2FFB700AC1CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C364B5812BC2FFB700AC1CB3 /* AliasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5872BC2FFD600AC1CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C364B58E2BC2FFD600AC1CB3 /* AliasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C364B5972BC300C700AC1CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C364B59E2BC300C700AC1CB3 /* AliasSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C364B5832BC2FFB700AC1CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = C364B5822BC2FFB700AC1CB3 /* PBXContainerItemProxy */;
+		};
+		C364B5922BC2FFD600AC1CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = C364B5912BC2FFD600AC1CB3 /* PBXContainerItemProxy */;
+		};
+		C364B5A02BC300C700AC1CB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = C364B59F2BC300C700AC1CB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C333AB8D2B9F040000EA100E /* LaunchScreen.storyboard */ = {
@@ -888,6 +1119,112 @@
 			};
 			name = Release;
 		};
+		C364B5842BC2FFB700AC1CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Debug;
+		};
+		C364B5852BC2FFB700AC1CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Release;
+		};
+		C364B5942BC2FFD600AC1CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GroupGames;
+			};
+			name = Debug;
+		};
+		C364B5952BC2FFD600AC1CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GroupGames;
+			};
+			name = Release;
+		};
+		C364B5A22BC300C700AC1CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Debug;
+		};
+		C364B5A32BC300C700AC1CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W937SWAWNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirill.AliasSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -905,6 +1242,33 @@
 			buildConfigurations = (
 				C333AB942B9F040000EA100E /* Debug */,
 				C333AB952B9F040000EA100E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C364B5862BC2FFB700AC1CB3 /* Build configuration list for PBXNativeTarget "AliasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C364B5842BC2FFB700AC1CB3 /* Debug */,
+				C364B5852BC2FFB700AC1CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C364B5932BC2FFD600AC1CB3 /* Build configuration list for PBXNativeTarget "AliasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C364B5942BC2FFD600AC1CB3 /* Debug */,
+				C364B5952BC2FFD600AC1CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C364B5A12BC300C700AC1CB3 /* Build configuration list for PBXNativeTarget "AliasSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C364B5A22BC300C700AC1CB3 /* Debug */,
+				C364B5A32BC300C700AC1CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -928,6 +1292,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		C364B5752BC2FE4D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing?ysclid=lupq3r5ecp929517126";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -945,6 +1317,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C333ABC82BAF1F3400EA100E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		C364B5762BC2FE4D00AC1CB3 /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5752BC2FE4D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		C364B5782BC2FE4D00AC1CB3 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5752BC2FE4D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 
