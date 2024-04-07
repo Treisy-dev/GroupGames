@@ -9,16 +9,23 @@ import XCTest
 
 final class SpyUITest: XCTestCase {
 
-    let app = XCUIApplication()
+    private var app: XCUIApplication!
+
+    override func setUpWithError() throws {
+        app = XCUIApplication()
+        app.launch()
+        let backButton = app.buttons["spyButton"]
+        backButton.tap()
+    }
 
     func testStartButton() throws {
         let startButton = app.buttons["startButtonSpy"]
-        XCTAssertFalse(startButton.exists)
+        XCTAssertTrue(startButton.exists)
     }
 
     func testExitButton() throws {
         let exitButton = app.buttons["exitButtonSpy"]
-        XCTAssertFalse(exitButton.exists)
+        XCTAssertTrue(exitButton.exists)
     }
 }
 

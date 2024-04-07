@@ -94,6 +94,7 @@ final class MainView: UIView {
             self?.delegate?.didSpyButtonTapped()
         }
         spyButton.addAction(spyAction, for: .touchUpInside)
+        spyButton.accessibilityIdentifier = "spyButton"
         spyButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.width.equalTo(130)
