@@ -7,6 +7,14 @@
 import SnapKit
 import UIKit
 
+enum AccessibilityIdentifiersFiveSecond {
+    static let startButton = "startButton"
+    static let exitButton = "exitButton"
+    static let addPlayerButton = "addPlayerButton"
+    static let contentViewTitleLabel = "contentViewTitleLabel"
+
+}
+
 class FiveSecondsPlayersScreenView: UIView {
 
     private lazy var playersContentView: UIView = UIView()
@@ -71,6 +79,7 @@ class FiveSecondsPlayersScreenView: UIView {
         contentViewTitleLabel.numberOfLines = 2
         contentViewTitleLabel.textAlignment = .center
         contentViewTitleLabel.textColor = .white
+        contentViewTitleLabel.accessibilityIdentifier = AccessibilityIdentifiersFiveSecond.contentViewTitleLabel
         contentViewTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.centerX.equalToSuperview()
@@ -96,6 +105,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.nextTapped?()
         }
         startButton.addAction(nextAction, for: .touchUpInside)
+        startButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSecond.startButton
         startButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalToSuperview().inset(20)
@@ -110,6 +120,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.addPlayerTapped?()
         }
         addPlayerButton.addAction(optionsAction, for: .touchUpInside)
+        addPlayerButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSecond.addPlayerButton
         addPlayerButton.snp.makeConstraints { make in
             make.top.equalTo(playersContentView.snp.bottom).offset(10)
             make.trailing.equalTo(startButton.snp.leading).inset(-10)
@@ -124,6 +135,7 @@ class FiveSecondsPlayersScreenView: UIView {
             self?.exitButtonTapped?()
         }
         exitButton.addAction(optionsAction, for: .touchUpInside)
+        exitButton.accessibilityIdentifier = AccessibilityIdentifiersFiveSecond.exitButton
         exitButton.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(64)
             make.leading.equalToSuperview().offset(20)

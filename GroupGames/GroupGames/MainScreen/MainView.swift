@@ -65,6 +65,7 @@ final class MainView: UIView {
             self?.delegate?.didYesNoButtonTapped()
         }
         yesNoButton.addAction(yesNoAction, for: .touchUpInside)
+        yesNoButton.accessibilityIdentifier = "yesNoButton"
         yesNoButton.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(50)
             make.width.equalTo(130)

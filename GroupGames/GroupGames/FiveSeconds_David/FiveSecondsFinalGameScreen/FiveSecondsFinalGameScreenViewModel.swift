@@ -15,6 +15,7 @@ final class FiveSecondsFinalGameScreenViewModel: NSObject {
         self.playerName = playerName
         self.scores = scores
     }
+
     func getPlayer() -> String {
         return playerName
     }

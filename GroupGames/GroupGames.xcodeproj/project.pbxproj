@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
+		2AE929602BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE9295F2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.swift */; };
+		2AE9296D2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE9296C2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.swift */; };
+		2AE929762BC338E2003D32E0 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE929752BC338E2003D32E0 /* SnapshotTesting */; };
+		2AE9297E2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE9297D2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.swift */; };
+		2AE929852BC33995003D32E0 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE929842BC33995003D32E0 /* SnapshotTesting */; };
 		2AF0F6102BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */; };
 		2AF0F6122BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */; };
 		2AF0F6142BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */; };
@@ -71,12 +76,33 @@
 		C364B5AB2BC30A9A00AC1CB3 /* AliasTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5AA2BC30A9A00AC1CB3 /* AliasTest.swift */; };
 		C364B5B82BC30AB100AC1CB3 /* AliasSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5B72BC30AB100AC1CB3 /* AliasSnapshotTests.swift */; };
 		C364B5C52BC30AC000AC1CB3 /* AliasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5C42BC30AC000AC1CB3 /* AliasUITests.swift */; };
-		C364B5D52BC30ADF00AC1CB3 /* FiveSecondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5D42BC30ADF00AC1CB3 /* FiveSecondTests.swift */; };
+		C364B5D52BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5D42BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests.swift */; };
 		C364B5E22BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5E12BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift */; };
 		C364B5EF2BC30B1000AC1CB3 /* FiveSecondsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B5EE2BC30B1000AC1CB3 /* FiveSecondsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2AE929612BC325E4003D32E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
+		2AE9296E2BC3301B003D32E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
+		2AE9297F2BC33957003D32E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C333AB7B2B9F03FE00EA100E;
+			remoteInfo = GroupGames;
+		};
 		C364B5AC2BC30A9A00AC1CB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C333AB742B9F03FE00EA100E /* Project object */;
@@ -135,6 +161,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AE9295D2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondsPlayersScreenViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE9295F2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersScreenViewModelTests.swift; sourceTree = "<group>"; };
+		2AE9296A2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondsFinalGamesScreenViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE9296C2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGamesScreenViewModelTests.swift; sourceTree = "<group>"; };
+		2AE9297B2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondsGameScreenSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE9297D2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsGameScreenSnapshotTests.swift; sourceTree = "<group>"; };
 		2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenView.swift; sourceTree = "<group>"; };
 		2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewController.swift; sourceTree = "<group>"; };
 		2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewModel.swift; sourceTree = "<group>"; };
@@ -204,7 +236,7 @@
 		C364B5C22BC30AC000AC1CB3 /* AliasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C364B5C42BC30AC000AC1CB3 /* AliasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasUITests.swift; sourceTree = "<group>"; };
 		C364B5D22BC30ADF00AC1CB3 /* FiveSecondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C364B5D42BC30ADF00AC1CB3 /* FiveSecondTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondTests.swift; sourceTree = "<group>"; };
+		C364B5D42BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsGameScreenViewModelTests.swift; sourceTree = "<group>"; };
 		C364B5DF2BC30AF800AC1CB3 /* FiveSecondSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C364B5E12BC30AF800AC1CB3 /* FiveSecondSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondSnapshotTests.swift; sourceTree = "<group>"; };
 		C364B5EC2BC30B1000AC1CB3 /* FiveSecondsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveSecondsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +244,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2AE9295A2BC325E4003D32E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929672BC3301B003D32E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929782BC33957003D32E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE929852BC33995003D32E0 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C333AB792B9F03FE00EA100E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +309,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE929762BC338E2003D32E0 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +323,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AE9295E2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE9295F2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.swift */,
+			);
+			path = FiveSecondsPlayersScreenViewModelTests;
+			sourceTree = "<group>";
+		};
+		2AE9296B2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE9296C2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.swift */,
+			);
+			path = FiveSecondsFinalGamesScreenViewModelTests;
+			sourceTree = "<group>";
+		};
+		2AE9297C2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE9297D2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.swift */,
+			);
+			path = FiveSecondsGameScreenSnapshotTests;
+			sourceTree = "<group>";
+		};
 		2AF0F60E2BB37EDB00B27852 /* FiveSecondsFinalGameScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +514,9 @@
 				C364B5D22BC30ADF00AC1CB3 /* FiveSecondTests.xctest */,
 				C364B5DF2BC30AF800AC1CB3 /* FiveSecondSnapshotTests.xctest */,
 				C364B5EC2BC30B1000AC1CB3 /* FiveSecondsUITests.xctest */,
+				2AE9295D2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.xctest */,
+				2AE9296A2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.xctest */,
+				2AE9297B2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -634,12 +716,12 @@
 			path = AliasTests;
 			sourceTree = "<group>";
 		};
-		C364B5D32BC30ADF00AC1CB3 /* FiveSecondTests */ = {
+		C364B5D32BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				C364B5D42BC30ADF00AC1CB3 /* FiveSecondTests.swift */,
+				C364B5D42BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests.swift */,
 			);
-			path = FiveSecondTests;
+			path = FiveSecondsGameScreenViewModelTests;
 			sourceTree = "<group>";
 		};
 		C364B5E02BC30AF800AC1CB3 /* FiveSecondSnapshotTests */ = {
@@ -661,8 +743,11 @@
 		C364B5F72BC30B2D00AC1CB3 /* FiveSecondsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C364B5D32BC30ADF00AC1CB3 /* FiveSecondTests */,
+				2AE9296B2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests */,
+				2AE9295E2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests */,
+				C364B5D32BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests */,
 				C364B5E02BC30AF800AC1CB3 /* FiveSecondSnapshotTests */,
+				2AE9297C2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests */,
 				C364B5ED2BC30B1000AC1CB3 /* FiveSecondsUITests */,
 			);
 			path = FiveSecondsTests;
@@ -671,6 +756,63 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2AE9295C2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE929632BC325E4003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsPlayersScreenViewModelTests" */;
+			buildPhases = (
+				2AE929592BC325E4003D32E0 /* Sources */,
+				2AE9295A2BC325E4003D32E0 /* Frameworks */,
+				2AE9295B2BC325E4003D32E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE929622BC325E4003D32E0 /* PBXTargetDependency */,
+			);
+			name = FiveSecondsPlayersScreenViewModelTests;
+			productName = FiveSecondsPlayersScreenViewModelTests;
+			productReference = 2AE9295D2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AE929692BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE929702BC3301B003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsFinalGamesScreenViewModelTests" */;
+			buildPhases = (
+				2AE929662BC3301B003D32E0 /* Sources */,
+				2AE929672BC3301B003D32E0 /* Frameworks */,
+				2AE929682BC3301B003D32E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE9296F2BC3301B003D32E0 /* PBXTargetDependency */,
+			);
+			name = FiveSecondsFinalGamesScreenViewModelTests;
+			productName = FiveSecondsFinalGamesScreenViewModelTests;
+			productReference = 2AE9296A2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AE9297A2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE929812BC33958003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsGameScreenSnapshotTests" */;
+			buildPhases = (
+				2AE929772BC33957003D32E0 /* Sources */,
+				2AE929782BC33957003D32E0 /* Frameworks */,
+				2AE929792BC33957003D32E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE929802BC33957003D32E0 /* PBXTargetDependency */,
+			);
+			name = FiveSecondsGameScreenSnapshotTests;
+			packageProductDependencies = (
+				2AE929842BC33995003D32E0 /* SnapshotTesting */,
+			);
+			productName = FiveSecondsGameScreenSnapshotTests;
+			productReference = 2AE9297B2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C333AB7B2B9F03FE00EA100E /* GroupGames */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C333AB932B9F040000EA100E /* Build configuration list for PBXNativeTarget "GroupGames" */;
@@ -765,6 +907,8 @@
 				C364B5D72BC30ADF00AC1CB3 /* PBXTargetDependency */,
 			);
 			name = FiveSecondTests;
+			packageProductDependencies = (
+			);
 			productName = FiveSecondTests;
 			productReference = C364B5D22BC30ADF00AC1CB3 /* FiveSecondTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -783,6 +927,9 @@
 				C364B5E42BC30AF800AC1CB3 /* PBXTargetDependency */,
 			);
 			name = FiveSecondSnapshotTests;
+			packageProductDependencies = (
+				2AE929752BC338E2003D32E0 /* SnapshotTesting */,
+			);
 			productName = FiveSecondSnapshotTests;
 			productReference = C364B5DF2BC30AF800AC1CB3 /* FiveSecondSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -815,6 +962,18 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					2AE9295C2BC325E4003D32E0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
+					};
+					2AE929692BC3301B003D32E0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
+					};
+					2AE9297A2BC33957003D32E0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C333AB7B2B9F03FE00EA100E;
+					};
 					C333AB7B2B9F03FE00EA100E = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -869,11 +1028,35 @@
 				C364B5D12BC30ADF00AC1CB3 /* FiveSecondTests */,
 				C364B5DE2BC30AF800AC1CB3 /* FiveSecondSnapshotTests */,
 				C364B5EB2BC30B1000AC1CB3 /* FiveSecondsUITests */,
+				2AE9295C2BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests */,
+				2AE929692BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests */,
+				2AE9297A2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2AE9295B2BC325E4003D32E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929682BC3301B003D32E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929792BC33957003D32E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C333AB7A2B9F03FE00EA100E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -989,6 +1172,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2AE929592BC325E4003D32E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE929602BC325E4003D32E0 /* FiveSecondsPlayersScreenViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929662BC3301B003D32E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE9296D2BC3301B003D32E0 /* FiveSecondsFinalGamesScreenViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE929772BC33957003D32E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE9297E2BC33957003D32E0 /* FiveSecondsGameScreenSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C333AB782B9F03FE00EA100E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1079,7 +1286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C364B5D52BC30ADF00AC1CB3 /* FiveSecondTests.swift in Sources */,
+				C364B5D52BC30ADF00AC1CB3 /* FiveSecondsGameScreenViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,6 +1309,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2AE929622BC325E4003D32E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = 2AE929612BC325E4003D32E0 /* PBXContainerItemProxy */;
+		};
+		2AE9296F2BC3301B003D32E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = 2AE9296E2BC3301B003D32E0 /* PBXContainerItemProxy */;
+		};
+		2AE929802BC33957003D32E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
+			targetProxy = 2AE9297F2BC33957003D32E0 /* PBXContainerItemProxy */;
+		};
 		C364B5AD2BC30A9A00AC1CB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C333AB7B2B9F03FE00EA100E /* GroupGames */;
@@ -1146,6 +1368,108 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2AE929642BC325E4003D32E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsPlayersScreenViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Debug;
+		};
+		2AE929652BC325E4003D32E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsPlayersScreenViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Release;
+		};
+		2AE929712BC3301B003D32E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsFinalGamesScreenViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Debug;
+		};
+		2AE929722BC3301B003D32E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsFinalGamesScreenViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Release;
+		};
+		2AE929822BC33958003D32E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsGameScreenSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Debug;
+		};
+		2AE929832BC33958003D32E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FiveSecondsGameScreenSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GroupGames";
+			};
+			name = Release;
+		};
 		C333AB912B9F040000EA100E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1546,6 +1870,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2AE929632BC325E4003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsPlayersScreenViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE929642BC325E4003D32E0 /* Debug */,
+				2AE929652BC325E4003D32E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE929702BC3301B003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsFinalGamesScreenViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE929712BC3301B003D32E0 /* Debug */,
+				2AE929722BC3301B003D32E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE929812BC33958003D32E0 /* Build configuration list for PBXNativeTarget "FiveSecondsGameScreenSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE929822BC33958003D32E0 /* Debug */,
+				2AE929832BC33958003D32E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C333AB772B9F03FE00EA100E /* Build configuration list for PBXProject "GroupGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1652,6 +2003,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AACDC362BAF26E4000672B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		2AE929752BC338E2003D32E0 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5F82BC30B6D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		2AE929842BC33995003D32E0 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C364B5F82BC30B6D00AC1CB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 		C333ABC92BAF1F3400EA100E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
