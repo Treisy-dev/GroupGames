@@ -1,13 +1,13 @@
 //
-//  AliasTests.swift
-//  AliasTests
+//  AliasTest.swift
+//  AliasTest
 //
 //  Created by Кирилл Щёлоков on 07.04.2024.
 //
 
 import XCTest
 
-final class AliasTests: XCTestCase {
+final class AliasTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

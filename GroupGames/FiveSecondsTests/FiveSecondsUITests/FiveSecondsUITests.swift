@@ -1,13 +1,13 @@
 //
-//  AliasUITests.swift
-//  AliasUITests
+//  FiveSecondsUITests.swift
+//  FiveSecondsUITests
 //
 //  Created by Кирилл Щёлоков on 07.04.2024.
 //
 
 import XCTest
 
-final class AliasUITests: XCTestCase {
+final class FiveSecondsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,14 +28,5 @@ final class AliasUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }

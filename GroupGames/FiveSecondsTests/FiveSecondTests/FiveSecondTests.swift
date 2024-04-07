@@ -1,13 +1,13 @@
 //
-//  FiveSecondsTests.swift
-//  FiveSecondsTests
+//  FiveSecondTests.swift
+//  FiveSecondTests
 //
-//  Created by Давид Васильев on 07.04.2024.
+//  Created by Кирилл Щёлоков on 07.04.2024.
 //
 
 import XCTest
 
-final class FiveSecondsTests: XCTestCase {
+final class FiveSecondTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
