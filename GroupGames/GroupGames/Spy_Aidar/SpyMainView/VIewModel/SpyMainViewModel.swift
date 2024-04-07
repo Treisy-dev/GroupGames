@@ -18,11 +18,11 @@ final class SpyMainViewModel: ViewModel {
 
     // MARK: Private properties
 
-    private var output: SpyMainModuleOutput
+    private var output: SpyMainModuleOutput?
 
     // MARK: Initializators
 
-    init(output: SpyMainModuleOutput) {
+    init(output: SpyMainModuleOutput?) {
         self.output = output
     }
 
@@ -31,11 +31,11 @@ final class SpyMainViewModel: ViewModel {
     func trigger(_ itent: SpyMainViewIntent) {
         switch itent {
         case .settings:
-            output.proccedButtonTapedSettings()
+            output?.proccedButtonTapedSettings()
         case .start:
-            output.proccedButtonTapedStart()
+            output?.proccedButtonTapedStart()
         case .exit:
-            output.proccedButtonTapedExit()
+            output?.proccedButtonTapedExit()
         }
     }
 }

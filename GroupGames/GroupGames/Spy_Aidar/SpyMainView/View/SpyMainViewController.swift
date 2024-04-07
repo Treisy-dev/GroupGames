@@ -8,6 +8,11 @@
 import UIKit
 import SnapKit
 
+enum AccessibilityIdentifiers {
+    static let startButton = "startButton"
+    static let exitButton = "exitButton"
+}
+
 final class SpyMainViewController: UIViewController {
 
     // MARK: Private properties
@@ -27,6 +32,7 @@ final class SpyMainViewController: UIViewController {
         let button = UIButton(primaryAction: action)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Start", for: .normal)
+        button.accessibilityIdentifier = AccessibilityIdentifiers.startButton
         return button
     }()
 
@@ -47,6 +53,7 @@ final class SpyMainViewController: UIViewController {
         let button = UIButton(primaryAction: action)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Exit", for: .normal)
+        button.accessibilityIdentifier = AccessibilityIdentifiers.exitButton
         return button
     }()
 

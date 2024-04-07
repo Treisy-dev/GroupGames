@@ -12,11 +12,11 @@ final class SpyMainViewBuilder {
 
     // MARK: Private properties
 
-    private let output: SpyMainModuleOutput
+    private let output: SpyMainModuleOutput?
 
     // MARK: Initializators
 
-    init(output: SpyMainModuleOutput) {
+    init(output: SpyMainModuleOutput?) {
         self.output = output
     }
 

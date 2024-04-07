@@ -18,7 +18,7 @@ final class SpySettingsViewModel: ViewModel {
 
     private(set) var playersSettingSC = ["3", "4", "5"]
     private(set) var timerSettingSC = ["1", "2", "3"]
-    private var output: SpySettingsModuleOutput
+    private var output: SpySettingsModuleOutput?
 
     // MARK: Internal properties
 
@@ -26,7 +26,7 @@ final class SpySettingsViewModel: ViewModel {
 
     // MARK: Initializators
 
-    init(output: SpySettingsModuleOutput, settings: Settings) {
+    init(output: SpySettingsModuleOutput?, settings: Settings) {
         self.output = output
         self.settings = settings
     }
@@ -36,7 +36,7 @@ final class SpySettingsViewModel: ViewModel {
     func trigger(_ itent: SpySettingsViewIntent) {
         switch itent {
         case .onClose:
-            output.moduleWantsToClose(settings)
+            output?.moduleWantsToClose(settings)
         }
     }
 }

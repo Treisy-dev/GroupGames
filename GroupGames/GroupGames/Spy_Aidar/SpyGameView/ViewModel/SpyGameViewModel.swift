@@ -26,9 +26,9 @@ final class SpyGameViewModel: ViewModel {
     // MARK: Private properties
 
     private weak var output: SpyGameModuleOutput?
-    private let settings: Settings
+    private(set) var settings: Settings
     private var timer: Int?
-    private var qustions: [String] = []
+    private(set) var qustions: [String] = []
     private var countQustions = 0
     @Published private(set) var state: SpyGameViewState
     @Published private(set) var nameJob: String?
@@ -39,7 +39,7 @@ final class SpyGameViewModel: ViewModel {
 
     // MARK: Initializators
 
-    init(output: SpyGameModuleOutput, settings: Settings) {
+    init(output: SpyGameModuleOutput?, settings: Settings) {
         self.output = output
         self.settings = settings
         state = .wait

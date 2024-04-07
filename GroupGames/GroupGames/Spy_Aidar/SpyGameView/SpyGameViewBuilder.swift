@@ -12,12 +12,12 @@ final class SpyGameViewBuilder {
 
     // MARK: Private properties
 
-    private let output: SpyGameModuleOutput
+    private let output: SpyGameModuleOutput?
     private let settings: Settings
 
     // MARK: Initializators
 
-    init(output: SpyGameModuleOutput, settings: Settings) {
+    init(output: SpyGameModuleOutput?, settings: Settings) {
         self.output = output
         self.settings = settings
     }
