@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5042FB2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5042FA2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift */; };
+		2A5042FD2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5042FC2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift */; };
 		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
 		2AF0F6102BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */; };
 		2AF0F6122BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */; };
@@ -165,6 +167,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A5042FA2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersViewModelSUI.swift; sourceTree = "<group>"; };
+		2A5042FC2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsPlayersSUIView.swift; sourceTree = "<group>"; };
 		2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenView.swift; sourceTree = "<group>"; };
 		2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewController.swift; sourceTree = "<group>"; };
 		2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveSecondsFinalGameScreenViewModel.swift; sourceTree = "<group>"; };
@@ -331,6 +335,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5042F92C02279800A8DA22 /* FiveSecondsPlayersScreenSUI */ = {
+			isa = PBXGroup;
+			children = (
+				2A5042FA2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift */,
+				2A5042FC2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift */,
+			);
+			path = FiveSecondsPlayersScreenSUI;
+			sourceTree = "<group>";
+		};
 		2AF0F60E2BB37EDB00B27852 /* FiveSecondsFinalGameScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,6 +641,7 @@
 		C364B50C2BB1B1A000AC1CB3 /* FiveSeconds_David */ = {
 			isa = PBXGroup;
 			children = (
+				2A5042F92C02279800A8DA22 /* FiveSecondsPlayersScreenSUI */,
 				2AF0F6152BB493E500B27852 /* UIFabrics */,
 				2AF0F60E2BB37EDB00B27852 /* FiveSecondsFinalGameScreen */,
 				C364B5192BB1B23C00AC1CB3 /* FiveSecondsPlayersScreen */,
@@ -1243,6 +1257,7 @@
 				C333AB822B9F03FE00EA100E /* SceneDelegate.swift in Sources */,
 				C364B51F2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift in Sources */,
 				78B05A7D2BB09FFB00D74385 /* ViewModel.swift in Sources */,
+				2A5042FB2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
 				C3F432422C02680100AB769D /* AliasScoreViewModelSUI.swift in Sources */,
 				C364B51D2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift in Sources */,
@@ -1253,6 +1268,7 @@
 				C333ABD32BAFED2E00EA100E /* AliasTeamsView.swift in Sources */,
 				C333ABD72BAFED4800EA100E /* AliasTeamsViewModel.swift in Sources */,
 				C333ABDA2BAFF42000EA100E /* UITableViewCellExtension.swift in Sources */,
+				2A5042FD2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift in Sources */,
 				C333ABF22BB01DAB00EA100E /* AliasSettingsViewModel.swift in Sources */,
 				C364B5112BB1B1DF00AC1CB3 /* FiveSecondsGameScreenViewController.swift in Sources */,
 				78B05A792BB09FFB00D74385 /* SpySettingsViewModel.swift in Sources */,
