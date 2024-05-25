@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4FF07E2C02774F00DD013F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2A4FF07D2C02774F00DD013F /* Alamofire */; };
 		2A5042FB2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5042FA2C02280700A8DA22 /* FiveSecondsPlayersViewModelSUI.swift */; };
 		2A5042FD2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5042FC2C0228BB00A8DA22 /* FiveSecondsPlayersSUIView.swift */; };
-		2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2AACDC372BAF26E4000672B0 /* Alamofire */; };
 		2AF0F6102BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F60F2BB37F3700B27852 /* FiveSecondsFinalGameScreenView.swift */; };
 		2AF0F6122BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6112BB37F5000B27852 /* FiveSecondsFinalGameScreenViewController.swift */; };
 		2AF0F6142BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0F6132BB37F6100B27852 /* FiveSecondsFinalGameScreenViewModel.swift */; };
@@ -259,8 +259,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AACDC382BAF26E4000672B0 /* Alamofire in Frameworks */,
 				C333ABCA2BAF1F3400EA100E /* SnapKit in Frameworks */,
+				2A4FF07E2C02774F00DD013F /* Alamofire in Frameworks */,
 				C333ABCC2BAF1F3400EA100E /* SnapKit-Dynamic in Frameworks */,
 				A53B64897EDBAAF1B773C1CB /* Pods_GroupGames.framework in Frameworks */,
 			);
@@ -817,7 +817,7 @@
 			packageProductDependencies = (
 				C333ABC92BAF1F3400EA100E /* SnapKit */,
 				C333ABCB2BAF1F3400EA100E /* SnapKit-Dynamic */,
-				2AACDC372BAF26E4000672B0 /* Alamofire */,
+				2A4FF07D2C02774F00DD013F /* Alamofire */,
 			);
 			productName = GroupGames;
 			productReference = C333AB7C2B9F03FE00EA100E /* GroupGames.app */;
@@ -2050,7 +2050,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2AACDC372BAF26E4000672B0 /* Alamofire */ = {
+		2A4FF07D2C02774F00DD013F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2AACDC362BAF26E4000672B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
