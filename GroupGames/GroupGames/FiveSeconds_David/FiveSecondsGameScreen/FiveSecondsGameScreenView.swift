@@ -52,10 +52,15 @@ class FiveSecondsGameScreenView: UIView {
     }
 
     private func setUpBackground() {
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        let backgroundImage = UIImageView()
         backgroundImage.image = .backOrange
         backgroundImage.contentMode = .scaleAspectFill
         self.insertSubview(backgroundImage, at: 0)
+        backgroundImage.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(-100)
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview().offset(100)
+        }
     }
 
     private func setUpTeamsCollectionView() {

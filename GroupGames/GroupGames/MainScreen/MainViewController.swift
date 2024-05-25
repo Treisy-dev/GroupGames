@@ -5,6 +5,7 @@
 //  Created by Кирилл Щёлоков on 11.03.2024.
 //
 
+import SwiftUI
 import UIKit
 
 final class MainViewController: UIViewController {
@@ -34,8 +35,9 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: MainViewDelegate {
     func didYesNoButtonTapped() {
-        navigationController?.pushViewController(
-            FiveSecondsPlayersScreenViewController(viewModel: FiveSecondsPlayersScreenViewModel()), animated: true)
+        let viewController = UIHostingController(rootView: FiveSecondsPlayersSUIView())
+        navigationController?.pushViewController(viewController, animated: true)
+
     }
 
     func didAliasButtonTapped() {

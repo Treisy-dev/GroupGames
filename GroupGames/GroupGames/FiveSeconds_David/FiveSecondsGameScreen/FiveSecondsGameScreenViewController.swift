@@ -42,13 +42,13 @@ class FiveSecondsGameScreenViewController: UIViewController {
                 self.gameScreenView.startTimer()
             }
         }
-
+        
         gameScreenView.scoresCollectionView.register(
             FiveSecondsScoresCollectionViewCell.self,
             forCellWithReuseIdentifier: FiveSecondsScoresCollectionViewCell.reuseIdentifier)
 
         gameScreenView.exitButtonTapped = {[weak self] in
-            self?.navigationController?.popViewController(animated: true)
+            self?.dismiss(animated: true)
         }
     }
 
@@ -69,7 +69,7 @@ extension FiveSecondsGameScreenViewController: KolodaViewDelegate, UICollectionV
 
     func vibrate() {
         let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.error) // Можно использовать .success, .warning или .error для различных типов вибрации
+        generator.notificationOccurred(.error)
         generator.prepare()
     }
 
@@ -94,9 +94,12 @@ extension FiveSecondsGameScreenViewController: KolodaViewDelegate, UICollectionV
         }
         if self.gameScreenView.kolodaView.currentCardIndex == self.gameScreenView.kolodaView.countOfCards {
             if let bestPlayer = viewModel.scoresPlayers.max(by: { $0.1 < $1.1 }) {
-                self.navigationController?.pushViewController(
-                    FiveSecondsFinalGameScreenViewController(
-                        viewModel: FiveSecondsFinalGameScreenViewModel(playerName: bestPlayer.0, scores: bestPlayer.1)), animated: true)
+                let viewController = FiveSecondsFinalGameScreenViewController(
+                    viewModel: FiveSecondsFinalGameScreenViewModel(playerName: bestPlayer.0, scores: bestPlayer.1))
+                viewController.exitClosure = {
+                    self.dismiss(animated: true)
+                }
+                self.show(viewController, sender: self)
             }
         }
     }

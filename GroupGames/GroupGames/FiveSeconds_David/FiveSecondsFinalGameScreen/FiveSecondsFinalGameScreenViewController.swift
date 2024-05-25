@@ -13,6 +13,7 @@ class FiveSecondsFinalGameScreenViewController: UIViewController {
 
     private let viewModel: FiveSecondsFinalGameScreenViewModel
 
+    var exitClosure: (() -> Void)?
     init(viewModel: FiveSecondsFinalGameScreenViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -29,7 +30,9 @@ class FiveSecondsFinalGameScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         contentView.exitButtonTapped = {[weak self] in
-            self?.navigationController?.popToRootViewController(animated: true)
+            self?.dismiss(animated: true, completion: {
+                self?.exitClosure?()
+            })
         }
     }
 }
