@@ -15,7 +15,7 @@ final class AliasGameViewModel: KolodaViewDataSource {
         "Вопрос 9", "Вопрос 10", "Вопрос 11", "Вопрос 12",
         "Вопрос 13", "Вопрос 14", "Вопрос 15", "Вопрос 16"]
 
-    var points: Int = 0
+    @Published var points: Int = 0
 
     func koloda(_ koloda: Koloda.KolodaView, viewForCardAt index: Int) -> UIView {
         let card = AliasCardSubView(frame: CGRect())

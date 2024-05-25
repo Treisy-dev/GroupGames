@@ -44,7 +44,9 @@ class AliasGameView: UIView {
         addSubview(gradientSubView)
         gradientSubView.backgroundColor = .clear
         gradientSubView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview().offset(40)
+            make.top.equalToSuperview().inset(-60)
         }
     }
 

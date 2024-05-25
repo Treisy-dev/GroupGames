@@ -81,6 +81,8 @@
 		C364B66C2BC3482400AC1CB3 /* SpySnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B66B2BC3482400AC1CB3 /* SpySnapshotTests.swift */; };
 		C364B6732BC3485300AC1CB3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C364B6722BC3485300AC1CB3 /* SnapshotTesting */; };
 		C364B67B2BC3487B00AC1CB3 /* SpyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B67A2BC3487B00AC1CB3 /* SpyUITests.swift */; };
+		C3F4323E2C014DD100AB769D /* AlliasScoreSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4323D2C014DD100AB769D /* AlliasScoreSUIView.swift */; };
+		C3F432422C02680100AB769D /* AliasScoreViewModelSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F432412C02680100AB769D /* AliasScoreViewModelSUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,6 +246,8 @@
 		C364B66B2BC3482400AC1CB3 /* SpySnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpySnapshotTests.swift; sourceTree = "<group>"; };
 		C364B6782BC3487B00AC1CB3 /* SpyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C364B67A2BC3487B00AC1CB3 /* SpyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyUITests.swift; sourceTree = "<group>"; };
+		C3F4323D2C014DD100AB769D /* AlliasScoreSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlliasScoreSUIView.swift; sourceTree = "<group>"; };
+		C3F432412C02680100AB769D /* AliasScoreViewModelSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasScoreViewModelSUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -614,10 +618,9 @@
 		C333ABFF2BB0BB1000EA100E /* AliasScoreScreen */ = {
 			isa = PBXGroup;
 			children = (
-				C333AC002BB0BB3C00EA100E /* AliasScoreViewController.swift */,
-				C333AC022BB0BB4A00EA100E /* AliasScoreView.swift */,
-				C333AC042BB0BB5300EA100E /* AliasScoreViewModel.swift */,
-				C333AC062BB0CAF000EA100E /* AliasTeamTableViewCell.swift */,
+				C3F432402C0267DC00AB769D /* UIKit */,
+				C3F4323D2C014DD100AB769D /* AlliasScoreSUIView.swift */,
+				C3F432412C02680100AB769D /* AliasScoreViewModelSUI.swift */,
 			);
 			path = AliasScoreScreen;
 			sourceTree = "<group>";
@@ -764,6 +767,17 @@
 				C364B6792BC3487B00AC1CB3 /* SpyUITests */,
 			);
 			path = SpyTests;
+			sourceTree = "<group>";
+		};
+		C3F432402C0267DC00AB769D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C333AC002BB0BB3C00EA100E /* AliasScoreViewController.swift */,
+				C333AC022BB0BB4A00EA100E /* AliasScoreView.swift */,
+				C333AC042BB0BB5300EA100E /* AliasScoreViewModel.swift */,
+				C333AC062BB0CAF000EA100E /* AliasTeamTableViewCell.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1230,6 +1244,7 @@
 				C364B51F2BB1B27700AC1CB3 /* FiveSecondsPlayersScreenViewController.swift in Sources */,
 				78B05A7D2BB09FFB00D74385 /* ViewModel.swift in Sources */,
 				C333AB9B2B9F055C00EA100E /* MainViewController.swift in Sources */,
+				C3F432422C02680100AB769D /* AliasScoreViewModelSUI.swift in Sources */,
 				C364B51D2BB1B26700AC1CB3 /* FiveSecondsPlayersScreenView.swift in Sources */,
 				C364B5232BB37A1B00AC1CB3 /* AliasUserDefaultsDataManager.swift in Sources */,
 				78B05A712BB09FFB00D74385 /* SpyMainViewModel.swift in Sources */,
@@ -1243,6 +1258,7 @@
 				78B05A792BB09FFB00D74385 /* SpySettingsViewModel.swift in Sources */,
 				C333ABFE2BB0AA5000EA100E /* AliasCardSubView.swift in Sources */,
 				78B05A722BB09FFB00D74385 /* SpyMainViewBuilder.swift in Sources */,
+				C3F4323E2C014DD100AB769D /* AlliasScoreSUIView.swift in Sources */,
 				C364B5182BB1B22800AC1CB3 /* FiveSecondsCardView.swift in Sources */,
 				C333AC052BB0BB5300EA100E /* AliasScoreViewModel.swift in Sources */,
 				C333ABF72BB0A92600EA100E /* AliasGameView.swift in Sources */,

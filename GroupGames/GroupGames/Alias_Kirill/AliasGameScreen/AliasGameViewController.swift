@@ -11,7 +11,9 @@ class AliasGameViewController: UIViewController {
 
     private let contentView: AliasGameView = .init()
     weak var delegate: AliasGameDelegate?
-    private let viewModel: AliasGameViewModel
+    weak var viewModelSUI: AliasScoreViewModelSUI?
+    let viewModel: AliasGameViewModel
+    var onDismiss: (() -> Void)?
 
     init(viewModel: AliasGameViewModel) {
         self.viewModel = viewModel
@@ -26,13 +28,18 @@ class AliasGameViewController: UIViewController {
         view = contentView
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        onDismiss?()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.kolodaView.dataSource = viewModel
         contentView.kolodaView.delegate = self
         contentView.timerFinished = { [weak self] in
-            self?.delegate?.updateScore(with: self?.viewModel.points ?? 0)
-            self?.navigationController?.popViewController(animated: true)
+//            self?.delegate?.updateScore(with: self?.viewModel.points ?? 0)
+            self?.dismiss(animated: true)
         }
     }
 }

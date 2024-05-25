@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 final class AliasTeamsViewController: UIViewController {
 
@@ -49,8 +50,9 @@ final class AliasTeamsViewController: UIViewController {
         contentView.nextTapped = { [weak self] in
             self?.viewModel.updateSettingsInfo()
             guard let teams = self?.viewModel.defaultTeams else { return }
-            let scoreViewModel = AliasScoreViewModel(defaultTeams: teams)
-            self?.navigationController?.pushViewController(AliasScoreViewController(viewModel: scoreViewModel), animated: true)
+            let SUIViewModel = AliasScoreViewModelSUI(defaultTeams: teams)
+            let controller = UIHostingController(rootView: AliasScoreSUIView(viewModel: SUIViewModel))
+            self?.navigationController?.pushViewController(controller, animated: true)
         }
     }
 }
