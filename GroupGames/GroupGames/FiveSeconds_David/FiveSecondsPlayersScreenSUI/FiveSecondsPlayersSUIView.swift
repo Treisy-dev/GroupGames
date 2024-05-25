@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyUIKitViewControllerWrapper: UIViewControllerRepresentable {
+struct MyUIKitViewControllerFiveSecondsWrapper: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: FiveSecondsGameScreenViewController, context: Context) {
 
     }
@@ -165,7 +165,7 @@ struct BottomView: View {
         }
         .frame(height: 30)
         .fullScreenCover(isPresented: $isPresented, content: {
-            MyUIKitViewControllerWrapper(namesPlayers: viewModel.players.map({($0.name, $0.image)}))
+            MyUIKitViewControllerFiveSecondsWrapper(namesPlayers: viewModel.players.map({($0.name, $0.image)}))
                 .toolbar(.hidden)
         })
     }
